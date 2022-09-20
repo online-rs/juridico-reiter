@@ -1,6 +1,6 @@
 //AQUI VAMOS COLCAR O H1 E OS LINKS QUE QUEREMOS
 botoes = ["Whatsapp", "Instagram", "Facebook"];
-var nomeprincipal = "Imobiliária Peres<br> Tramandai";
+var nomeprincipal = "Douglas Peres<br> Corretor Imobiliário";
 var instagramnome = "imobiliariaperestramandai";
 var celular = "995684306";
 var facebooknome = "imobiliariaperestramandai";
