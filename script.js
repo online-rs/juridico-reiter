@@ -1,52 +1,35 @@
-//AQUI VAMOS COLCAR O H1 E OS LINKS QUE QUEREMOS
-botoes = ["Whatsapp", "Instagram", "Facebook"];
-var nomeprincipal = "Douglas Peres<br> Corretor Imobiliário";
-var instagramnome = "imobiliariaperestramandai";
-var celular = "995684306";
-var facebooknome = "imobiliariaperestramandai";
-var sitenome = "https://www.reiterlog.com";
+function logar(){
+  window.open('https://mail22.reiterlog.com');}
 
-//inserindo o H1
-var newh1 = document.createElement("h1");
-newh1.id = "titulo";
-newh1.setAttribute("class", "titulo");
-newh1.innerHTML = nomeprincipal;
-document.getElementById("main").appendChild(newh1);
+function trello(){
+  window.open('https://trello.com/b/gLX9OLv5/reiter');}  
 
-//criando os menus
-function criar(nome) {
-  const para = document.createElement("div");
-  para.setAttribute("class", "row container");
-  para.id = "linha";
+function orient(){
+  window.open('https://drive.google.com/drive/folders/1OPy0lCBtVtdZDe5OkUJwiGp0HbNfc8hv');}  
 
-  var rede = nome;
-  const botaozinho = document.createElement("button");
-  botaozinho.setAttribute("class", "btn btn-lg btn-primary");
-  botaozinho.id = rede;
+function latromi(){
+  console.log('TESTE XVIDEOS')
+  window.open('http://172.31.0.142:8081/web');
+}  
 
-  botaozinho.innerHTML = rede;
-  document.getElementById("main").appendChild(para);
-  document.getElementById("linha").appendChild(botaozinho);
+var chamadoLink = 'https://chamados.reiterlog.com/';
+
+function abrirChamado(){
+  console.log('TESTE chamado')
+  window.open(chamadoLink);
 }
-botoes.forEach(criar);
 
-//gerando os links
-var a = document.getElementById("Whatsapp");
-a.onclick = function fwhatsapp() {
-  window.open("https://api.whatsapp.com/send?phone=5551" + celular + "&text=Oi.%20Achei%20seu%20contato%20no%20instagram.%20Quer%20falar%20com%20voc%C3%AA%20sobre%3A");
-};
+function conversar(){
+  var numeroWhatsapp = document.getElementById('numero').value;
+  var numeroddd = document.getElementById('ddd').value;
+  console.log(caminho);
+  if (numeroWhatsapp == ''){
+      alert('Favor colocar um número')
+  }else{
+      var caminho = 'https://wa.me/55' + numeroddd + numeroWhatsapp;
+      window.open(caminho);
+      document.getElementById('site').textContent = caminho;
+      document.getElementById('site').style.display = 'inline';
+  }
 
-var a = document.getElementById("Instagram");
-a.onclick = function fwhatsapp() {
-  window.open("https://www.instagram.com/" + instagramnome);
-};
-
-var a = document.getElementById("Facebook");
-a.onclick = function fwhatsapp() {
-  window.open("https://www.facebook.com/" + facebooknome);
-};
-
-var a = document.getElementById("Site");
-a.onclick = function fwhatsapp() {
-  window.open(sitenome);
-};
+}
