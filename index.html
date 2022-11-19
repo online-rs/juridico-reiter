@@ -100,7 +100,10 @@
         .tg .tg-n1r7{background-color:#FFF;font-weight:bold;text-align:center;vertical-align:bottom}
         .tg .tg-7yig{background-color:#FFF;text-align:center;vertical-align:top}
         </style>
-        <table class="tg">
+        <div class="container">
+          <button class="myButton btn-lg" onclick="displayPauta()">Pauta</button>
+        </div>
+        <table class="tg pauta container" id="pauta">
         <thead>
           <tr>
             <th class="tg-fll5">data</th>
@@ -119,56 +122,7 @@
             <th class="tg-f6bk">LINK</th>
           </tr>
         </thead>
-        <tbody>
-         
-          <tr>
-            <td class="tg-2ogz"><span style="font-weight:700;text-decoration:none;color:black;background-color:red">14/11/2022</span></td>
-            <td class="tg-n1r7">09:00:00</td>
-            <td class="tg-4bam">INSTRUÇÃO</td>
-            <td class="tg-n1r7">REITER</td>
-            <td class="tg-4bam">CANOAS</td>
-            <td class="tg-4bam">LUIZ FERNANDO DE LIMA&nbsp;&nbsp;&nbsp;DA SILVA</td>
-            <td class="tg-4bam">EDUARDA</td>
-            <td class="tg-4bam">ONLINE</td>
-            <td class="tg-kcps"> </td>
-            <td class="tg-n1r7">ARMAZENISTA</td>
-            <td class="tg-kcps">WMS II</td>
-            <td class="tg-n1r7">0021243-39.2020.5.04.0203</td>
-            <td class="tg-4bam">WENTZ</td>
-            <td class="tg-7yig"> https://trt4-jus-br.zoom.us/my/varacanoas03js</td>
-          </tr>
-          <tr>
-            <td class="tg-1rnr"><span style="font-weight:700;text-decoration:none;color:black;background-color:#00B0F0">16/11/2022</span></td>
-            <td class="tg-n1r7">09:00:00</td>
-            <td class="tg-4bam">INICIAL</td>
-            <td class="tg-n1r7">REITER</td>
-            <td class="tg-4bam">PELOTAS</td>
-            <td class="tg-4bam">ANDERSON GARCIA DE&nbsp;&nbsp;&nbsp;BORBA</td>
-            <td class="tg-4bam">MARCUS GOZ</td>
-            <td class="tg-4bam">PRESENCIAL</td>
-            <td class="tg-kcps"> </td>
-            <td class="tg-n1r7">MOTORISTA BITREM</td>
-            <td class="tg-kcps">FLORESTAL</td>
-            <td class="tg-n1r7">0020854-89.2022.5.04.0104</td>
-            <td class="tg-4bam">WENTZ</td>
-            <td class="tg-4bam">PRESENCIAL</td>
-          </tr>
-          <tr>
-            <td class="tg-2ogz"><span style="font-weight:700;text-decoration:none;color:black;background-color:red">16/11/2022</span></td>
-            <td class="tg-n1r7">10:00:00</td>
-            <td class="tg-4bam">INSTRUÇÃO</td>
-            <td class="tg-n1r7">REITER</td>
-            <td class="tg-4bam">CANOAS</td>
-            <td class="tg-7yig"> ELISEU DA SILVEIRA</td>
-            <td class="tg-4bam">BRUNO</td>
-            <td class="tg-4bam">PRESENCIAL</td>
-            <td class="tg-kcps"> </td>
-            <td class="tg-n1r7">CANDIDATO A VAGA</td>
-            <td class="tg-kcps">EM RECRUTAMENTO</td>
-            <td class="tg-n1r7">0021145-23.2021.5.04.0202</td>
-            <td class="tg-4bam">WENTZ</td>
-            <td class="tg-4bam">PRESENCIAL</td>
-          </tr>
+        <tbody id="tabela">
           <tr>
             <td class="tg-1rnr"><span style="font-weight:700;text-decoration:none;color:black;background-color:#00B0F0">21/11/2022</span></td>
             <td class="tg-n1r7">08:35:00</td>
@@ -316,7 +270,3 @@
         </tbody>
         </table>
 </section>
-<script src="script.js"></script>
-
-</body>
-</html>

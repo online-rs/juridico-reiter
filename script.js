@@ -1,3 +1,10 @@
+var linha = document.querySelectorAll('table > tbody  > tr');
+console.log(linha);
+
+var criarBotao = document.createElement("BUTTON");
+linha.forEach
+
+
 function logar(){
   window.open('https://mail22.reiterlog.com');}
 
@@ -33,6 +40,22 @@ function conversar(){
   }
 
 }
+var pauta = document.getElementById('pauta');
+pauta.style.display = 'none';
+
+function displayPauta(){
+  var pauta = document.getElementById('pauta');
+  var pautadisplay = pauta.style.display;
+  var pautadisplaynone = pauta.style.display = 'none';
+  var pautadisplayblock = pauta.style.display = 'block';
+  if (pautadisplay === pautadisplayblock){
+    pauta.style.display = 'none';
+  }else{
+    pauta.style.display = 'block';
+  }
+}
+
+
 
 function abrirConvite(){
   var abaConvite = document.getElementById('convite');
@@ -66,8 +89,6 @@ function convidarTestemunha(){
   }else{
       var caminho = 'https://wa.me/55' + numeroddd + numeroWhatsapp +'?text=Oi ' + nome + ', tudo bem?%0A%0ATeremos uma audiência de instrução do ex-funcionário '+ reclamante + '(' + processo + ')%0A%0AData: ' + data +'%0AHorário: ' + horario + '%0AModalidade: ' + modalidade + '%0ALocal: ' + local + '%0ALink: ' + link + '%0A%0A Poderia participar como testemunha, por favor? %0A%0AAbaixo está o link para instalação do aplicativo ZOOM. Favor aceitar todas as permissões, principalemnte áudio e video, para que não haja problemas na conexão. %0A%0ALink de instalação do ZOOM: https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=pt_BR&gl=US  ' 
       window.open(caminho);
-      document.getElementById('site').textContent = caminho;
-      document.getElementById('site').style.display = 'inline';
   }
 
 }
