@@ -4,9 +4,8 @@ console.log(linha);
 var criarBotao = document.createElement("BUTTON");
 linha.forEach
 
-
 function logar(){
-  window.open('https://mail22.reiterlog.com');}
+  openSite('https://mail22.reiterlog.com');}
 
 function trello(){
   window.open('https://trello.com/b/gLX9OLv5/reiter');}  
@@ -15,7 +14,7 @@ function orient(){
   window.open('https://drive.google.com/drive/folders/1OPy0lCBtVtdZDe5OkUJwiGp0HbNfc8hv');}  
 
 function latromi(){
-  console.log('TESTE XVIDEOS')
+  console.log('Abrindo Latromi')
   window.open('http://172.31.0.142:8081/web');
 }  
 
@@ -26,9 +25,14 @@ function abrirChamado(){
   window.open(chamadoLink);
 }
 
+
+function getV(alvoid){
+  return document.getElementById(alvoid).value;
+}
+
 function conversar(){
-  var numeroWhatsapp = document.getElementById('numero').value;
-  var numeroddd = document.getElementById('ddd').value;
+  var numeroWhatsapp = getV('numero');
+  var numeroddd = getV('ddd');
   console.log(caminho);
   if (numeroWhatsapp == ''){
       alert('Favor colocar um número')
@@ -43,35 +47,25 @@ function conversar(){
 var pauta = document.getElementById('pauta');
 pauta.style.display = 'none';
 
-function displayPauta(){
-  var pauta = document.getElementById('pauta');
+function hideObjects(ObjectId){
+  var pauta = document.getElementById(ObjectId);
   var pautadisplay = pauta.style.display;
-  var pautadisplaynone = pauta.style.display = 'none';
-  var pautadisplayblock = pauta.style.display = 'block';
-  if (pautadisplay === pautadisplayblock){
+  if (pautadisplay === 'block'){
     pauta.style.display = 'none';
   }else{
     pauta.style.display = 'block';
   }
 }
 
+function displayPauta(){
+  hideObjects('pauta');
+}
 
 
 function abrirConvite(){
-  var abaConvite = document.getElementById('convite');
-  var status = abaConvite.style.display;
-  var satusblock = abaConvite.style.display = 'block';
-  var satusnone = abaConvite.style.display = 'none';
-  console.log(status);
-  if (status === satusnone){
-    console.log('status estava none');
-    document.getElementById('convite').style.display = 'block';
-  }else{
-    console.log('status estava block');
-    document.getElementById('convite').style.display = 'none';
-  }
+  hideObjects('convite');
 }
-  
+ 
 
 function convidarTestemunha(){
   var numeroWhatsapp = document.getElementById('numeroConvite').value;

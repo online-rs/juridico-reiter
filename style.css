@@ -116,3 +116,19 @@ top:1px;
 .site{
   display: none;
 }
+
+.footer{
+  display: absolute;
+  bottom: '0';
+  width:100%;
+  background-color: #fe1a00;
+  color: white;
+}
+
+p{
+  font-weight: 600;
+
+}
+.meunome{
+  color: black !important;
+}
