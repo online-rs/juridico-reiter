@@ -103,172 +103,270 @@
         <div class="container">
           <button class="myButton btn-lg" onclick="displayPauta()">Pauta</button>
         </div>
-        <table class="tg pauta" id="pauta">
-        <thead>
-          <tr>
-            <th class="tg-fll5">data</th>
-            <th class="tg-f6bk">hora</th>
-            <th class="tg-f6bk">EVENTO</th>
-            <th class="tg-f6bk">Empresa</th>
-            <th class="tg-f6bk">Comarca</th>
-            <th class="tg-f6bk">Reclamante</th>
-            <th class="tg-f6bk">PREPOSTO</th>
-            <th class="tg-ukly">MODALIDADE</th>
-            <th class="tg-f6bk">PROPOSTA</th>
-            <th class="tg-f6bk">Função</th>
-            <th class="tg-f6bk">Setor</th>
-            <th class="tg-f6bk">Proc.</th>
-            <th class="tg-f6bk">Escritório</th>
-            <th class="tg-f6bk">LINK</th>
-          </tr>
-        </thead>
-        <tbody id="tabela">
-          <tr>
-            <td class="tg-1rnr"><span style="font-weight:700;text-decoration:none;color:black;background-color:#00B0F0">21/11/2022</span></td>
-            <td class="tg-n1r7">08:35:00</td>
-            <td class="tg-4bam">INICIAL</td>
-            <td class="tg-n1r7">REITER</td>
-            <td class="tg-4bam">CANOAS</td>
-            <td class="tg-4bam">DIEIME LEHMEN&nbsp;&nbsp;&nbsp;MACIEL </td>
-            <td class="tg-4bam">BRUNO</td>
-            <td class="tg-4bam">ONLINE</td>
-            <td class="tg-kcps"> </td>
-            <td class="tg-n1r7">RODOTREM</td>
-            <td class="tg-kcps">FROTA SECA</td>
-            <td class="tg-n1r7">0020788-06.2022.5.04.0203</td>
-            <td class="tg-4bam">HERMANN</td>
-            <td class="tg-4bam">https://trt4-jus-br.zoom.us/my/varacanoas03js </td>
-          </tr>
-          <tr>
-            <td class="tg-2ogz"><span style="font-weight:700;text-decoration:none;color:black;background-color:red">23/11/2022</span></td>
-            <td class="tg-n1r7">10:30:00</td>
-            <td class="tg-4bam">INSTRUÇÃO</td>
-            <td class="tg-n1r7">REITER</td>
-            <td class="tg-4bam">CANOAS</td>
-            <td class="tg-4bam">IRLONE PAULO DA&nbsp;&nbsp;&nbsp;SILVA COSTA</td>
-            <td class="tg-4bam">EDUARDA</td>
-            <td class="tg-4bam">ONLINE</td>
-            <td class="tg-kcps"> </td>
-            <td class="tg-n1r7">MOTORISTA CARRETA</td>
-            <td class="tg-kcps">FROTA REFRIGERADA</td>
-            <td class="tg-n1r7">0020307-74.2021.5.04.0204</td>
-            <td class="tg-4bam">WENTZ</td>
-            <td class="tg-7yig"> HTTPS://TRT4-JUS-BR.ZOOM.US/MY/VARACANOAS04JT</td>
-          </tr>
-          <tr>
-            <td class="tg-1rnr"><span style="font-weight:700;text-decoration:none;color:black;background-color:#00B0F0">24/11/2022</span></td>
-            <td class="tg-n1r7">08:30:00</td>
-            <td class="tg-4bam">CONCILIAÇÃO</td>
-            <td class="tg-n1r7">REITER</td>
-            <td class="tg-4bam">POUSO ALEGRE</td>
-            <td class="tg-4bam">EDUARDO DE CARVALHO&nbsp;&nbsp;&nbsp;MELO</td>
-            <td class="tg-4bam">EDUARDA</td>
-            <td class="tg-4bam">ONLINE</td>
-            <td class="tg-kcps"> </td>
-            <td class="tg-n1r7">FAN</td>
-            <td class="tg-kcps">TERCEIRO</td>
-            <td class="tg-n1r7">0010620-02.2021.5.03.0075</td>
-            <td class="tg-4bam">WENTZ</td>
-            <td class="tg-4bam">https://trt3-jus-br.zoom.us/my/vt1pousoalegre</td>
-          </tr>
-          <tr>
-            <td class="tg-1rnr"><span style="font-weight:700;text-decoration:none;color:black;background-color:#00B0F0">24/11/2022</span></td>
-            <td class="tg-n1r7">09:00:00</td>
-            <td class="tg-4bam">CONCILIAÇÃO</td>
-            <td class="tg-n1r7">REITER</td>
-            <td class="tg-4bam">FRANCISO BELTRÃO</td>
-            <td class="tg-4bam">Empresa NE&nbsp;&nbsp;&nbsp;Transportes Rodoviário de Cargas Eireli</td>
-            <td class="tg-4bam">BRUNO</td>
-            <td class="tg-4bam">ONLINE</td>
-            <td class="tg-kcps"> </td>
-            <td class="tg-n1r7">ACIDENTE</td>
-            <td class="tg-kcps">ACIDENTE</td>
-            <td class="tg-n1r7">0005858-67.2022.8.16.0083</td>
-            <td class="tg-4bam">WENTZ</td>
-            <td class="tg-4bam">(vazio)</td>
-          </tr>
-          <tr>
-            <td class="tg-n1r7">28/11/2022</td>
-            <td class="tg-n1r7">14:30:00</td>
-            <td class="tg-4bam">UNA</td>
-            <td class="tg-n1r7">REITER</td>
-            <td class="tg-4bam">SÃO PAULO</td>
-            <td class="tg-4bam">MICHAEL HENRIQUE&nbsp;&nbsp;&nbsp;FERREIRA MACHADO</td>
-            <td class="tg-4bam">EDUARDA</td>
-            <td class="tg-4bam">ONLINE</td>
-            <td class="tg-kcps"> </td>
-            <td class="tg-n1r7">AMIM</td>
-            <td class="tg-kcps">AMIM</td>
-            <td class="tg-n1r7">1000228-43.2022.5.02.0086</td>
-            <td class="tg-4bam">WENTZ</td>
-            <td class="tg-4bam">https://trt2-jus-br.zoom.us/j/89276162082?<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pwd=STVzNnRxYllQWm9ZSGcrWnVoODlyQT09</td>
-          </tr>
-          <tr>
-            <td class="tg-2ogz"><span style="font-weight:700;text-decoration:none;color:black;background-color:red">29/11/2022</span></td>
-            <td class="tg-n1r7">10:00:00</td>
-            <td class="tg-4bam">INSTRUÇÃO</td>
-            <td class="tg-n1r7">REITER</td>
-            <td class="tg-4bam">CANOAS</td>
-            <td class="tg-4bam">NELSON ROBERTO MENDES&nbsp;&nbsp;&nbsp;TEIXEIRA</td>
-            <td class="tg-4bam">BRUNO</td>
-            <td class="tg-4bam">ONLINE</td>
-            <td class="tg-kcps"> </td>
-            <td class="tg-n1r7">MOTORISTA RODOTREM</td>
-            <td class="tg-kcps">FROTA SECA</td>
-            <td class="tg-n1r7">0020148-71.2020.5.04.0203</td>
-            <td class="tg-4bam">WENTZ</td>
-            <td class="tg-4bam">https://trt4-jus-&nbsp;&nbsp;&nbsp;br.zoom.us/my/varacanoas03js </td>
-          </tr>
-          <tr>
-            <td class="tg-2ogz"><span style="font-weight:700;text-decoration:none;color:black;background-color:red">30/11/2022</span></td>
-            <td class="tg-n1r7">15:00:00</td>
-            <td class="tg-4bam">INSTRUÇÃO</td>
-            <td class="tg-n1r7">REITER</td>
-            <td class="tg-4bam">ARANGUA</td>
-            <td class="tg-4bam">CLAIR FLOREST ( acid.&nbsp;&nbsp;&nbsp;Transito)</td>
-            <td class="tg-4bam">TESTE. ?</td>
-            <td class="tg-4bam">?</td>
-            <td class="tg-kcps"> </td>
-            <td class="tg-n1r7">TERCEIRO</td>
-            <td class="tg-kcps">(vazio)</td>
-            <td class="tg-n1r7">038/1.12.0003688-5</td>
-            <td class="tg-4bam">WENTZ</td>
-            <td class="tg-4bam">APENAS T. RTE</td>
-          </tr>
-          <tr>
-            <td class="tg-1rnr"><span style="font-weight:700;text-decoration:none;color:black;background-color:#00B0F0">30/11/2022</span></td>
-            <td class="tg-n1r7">14:30:00</td>
-            <td class="tg-4bam">CONCILIAÇÃO</td>
-            <td class="tg-n1r7">VP</td>
-            <td class="tg-4bam">ESTEIO</td>
-            <td class="tg-4bam">EDUARDO JESUS&nbsp;&nbsp;&nbsp;CAMARGO  TEIXEIRA</td>
-            <td class="tg-4bam">VINICIUS</td>
-            <td class="tg-4bam">PRESENCIAL</td>
-            <td class="tg-kcps"> </td>
-            <td class="tg-n1r7">GERENTE OPERACOES</td>
-            <td class="tg-kcps">MATRIZ</td>
-            <td class="tg-n1r7">0020460-70.2021.5.04.0281</td>
-            <td class="tg-4bam">WENTZ</td>
-            <td class="tg-4bam">PRESENCIAL</td>
-          </tr>
-          <tr>
-            <td class="tg-2ogz"><span style="font-weight:700;text-decoration:none;color:black;background-color:red">30/11/2022</span></td>
-            <td class="tg-n1r7">09:00:00</td>
-            <td class="tg-4bam">INSTRUÇÃO</td>
-            <td class="tg-n1r7">REITER</td>
-            <td class="tg-4bam">CANOAS</td>
-            <td class="tg-4bam">SILVIO ALEXANDRE DA&nbsp;&nbsp;&nbsp;SILVA FREITAS(PDV)</td>
-            <td class="tg-4bam">EDUARDA</td>
-            <td class="tg-4bam">ONLINE</td>
-            <td class="tg-kcps"> </td>
-            <td class="tg-n1r7">MOTORISTA RODOTREM</td>
-            <td class="tg-kcps">FROTA SECA</td>
-            <td class="tg-n1r7">0020348-75.2020.5.04.0204</td>
-            <td class="tg-4bam">WENTZ</td>
-            <td class="tg-4bam">HTTPS://TRT4-JUS-BR.ZOOM.US/MY/VARACANOAS04JT</td>
-          </tr>
-        </tbody>
-        </table>
+        <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg .tg-getq{color:#F00;font-weight:bold;text-align:center;vertical-align:bottom}
+          .tg .tg-bobw{font-weight:bold;text-align:center;vertical-align:bottom}
+          .tg .tg-baqh{text-align:center;vertical-align:top}
+          .tg .tg-4bam{background-color:#FFF;text-align:center;vertical-align:bottom}
+          .tg .tg-f6bk{background-color:#D9D9D9;font-weight:bold;text-align:center;vertical-align:bottom}
+          .tg .tg-ukly{background-color:#D9D9D9;font-weight:bold;text-align:center;vertical-align:middle}
+          .tg .tg-1rnr{background-color:#00B0F0;font-weight:bold;text-align:center;vertical-align:bottom}
+          .tg .tg-8d8j{text-align:center;vertical-align:bottom}
+          .tg .tg-7zrl{text-align:left;vertical-align:bottom}
+          .tg .tg-h84a{background-color:#7030A0;font-weight:bold;text-align:center;vertical-align:bottom}
+          .tg .tg-2ogz{background-color:#F00;font-weight:bold;text-align:center;vertical-align:bottom}
+          .tg .tg-n1r7{background-color:#FFF;font-weight:bold;text-align:center;vertical-align:bottom}
+          .tg .tg-kcps{background-color:#FFF;text-align:left;vertical-align:bottom}
+          </style>
+          <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-bobw">data</th>
+              <th class="tg-f6bk">hora</th>
+              <th class="tg-f6bk">EVENTO</th>
+              <th class="tg-f6bk">Empresa</th>
+              <th class="tg-f6bk">Comarca</th>
+              <th class="tg-f6bk">Vara</th>
+              <th class="tg-f6bk">Reclamante</th>
+              <th class="tg-f6bk">PREPOSTO</th>
+              <th class="tg-ukly">MODALIDADE</th>
+              <th class="tg-f6bk">PROPOSTA</th>
+              <th class="tg-f6bk">Função</th>
+              <th class="tg-f6bk">Setor</th>
+              <th class="tg-f6bk">Proc.</th>
+              <th class="tg-f6bk">Escritório</th>
+              <th class="tg-f6bk">LINK</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-1rnr"><span style="font-weight:700;text-decoration:none;color:black;background-color:#00B0F0">21/11/2022</span></td>
+              <td class="tg-bobw">08:35:00</td>
+              <td class="tg-8d8j">INICIAL</td>
+              <td class="tg-bobw">REITER</td>
+              <td class="tg-8d8j">CANOAS</td>
+              <td class="tg-bobw">3ªVT</td>
+              <td class="tg-8d8j">DIEIME LEHMEN&nbsp;&nbsp;&nbsp;MACIEL </td>
+              <td class="tg-8d8j">BRUNO</td>
+              <td class="tg-8d8j">ONLINE</td>
+              <td class="tg-7zrl">28 a 30mil</td>
+              <td class="tg-8d8j">RODOTREM</td>
+              <td class="tg-8d8j">FROTA SECA</td>
+              <td class="tg-8d8j">0020788-06.2022.5.04.0203</td>
+              <td class="tg-8d8j">HERMANN</td>
+              <td class="tg-8d8j">https://trt4-jus-br.zoom.us/my/varacanoas03js </td>
+            </tr>
+            <tr>
+              <td class="tg-h84a"><span style="font-weight:700;text-decoration:none;color:black;background-color:#7030A0">21/11/2022</span></td>
+              <td class="tg-bobw">14:00:00</td>
+              <td class="tg-8d8j">PERÍCIA</td>
+              <td class="tg-bobw">REITER</td>
+              <td class="tg-8d8j">PELOTAS</td>
+              <td class="tg-bobw">3ªVT</td>
+              <td class="tg-8d8j">JOSE MELCHEQUE DE&nbsp;&nbsp;&nbsp;AVILA</td>
+              <td class="tg-8d8j">PABLO</td>
+              <td class="tg-getq">PRESENCIAL</td>
+              <td class="tg-7zrl">-</td>
+              <td class="tg-8d8j">MOTORISTA BITREM</td>
+              <td class="tg-8d8j">FLORESTAL</td>
+              <td class="tg-8d8j">0020735-34.2022.5.04.0103</td>
+              <td class="tg-8d8j">WENTZ</td>
+              <td class="tg-8d8j">PRESENCIAL</td>
+            </tr>
+            <tr>
+              <td class="tg-2ogz"><span style="font-weight:700;text-decoration:none;color:black;background-color:red">23/11/2022</span></td>
+              <td class="tg-bobw">10:30:00</td>
+              <td class="tg-8d8j">INSTRUÇÃO</td>
+              <td class="tg-bobw">REITER</td>
+              <td class="tg-8d8j">CANOAS</td>
+              <td class="tg-bobw">4ª VT</td>
+              <td class="tg-8d8j">IRLONE PAULO DA&nbsp;&nbsp;&nbsp;SILVA COSTA</td>
+              <td class="tg-8d8j">EDUARDA</td>
+              <td class="tg-8d8j">ONLINE</td>
+              <td class="tg-7zrl">33 a 35mil</td>
+              <td class="tg-8d8j">MOTORISTA CARRETA</td>
+              <td class="tg-8d8j">FROTA REFRIGERADA</td>
+              <td class="tg-8d8j">0020307-74.2021.5.04.0204</td>
+              <td class="tg-8d8j">WENTZ</td>
+              <td class="tg-baqh"> HTTPS://TRT4-JUS-BR.ZOOM.US/MY/VARACANOAS04JT</td>
+            </tr>
+            <tr>
+              <td class="tg-2ogz"><span style="font-weight:700;text-decoration:none;color:black;background-color:red">23/11/2022</span></td>
+              <td class="tg-bobw">14:30:00</td>
+              <td class="tg-8d8j">INSTRUÇÃO</td>
+              <td class="tg-bobw">REITER</td>
+              <td class="tg-8d8j">BAGÉ</td>
+              <td class="tg-bobw">1ª VT</td>
+              <td class="tg-8d8j">EVERTON LUCIANO&nbsp;&nbsp;&nbsp;DELABARI JANDREY</td>
+              <td class="tg-8d8j">BRUNO</td>
+              <td class="tg-8d8j">ONLINE</td>
+              <td class="tg-7zrl">10 a 12mil</td>
+              <td class="tg-8d8j">MOTORISTA TRUCK</td>
+              <td class="tg-8d8j">CARGA VIVA</td>
+              <td class="tg-8d8j">0020513-81.2019.5.04.0811</td>
+              <td class="tg-8d8j">POTIRA</td>
+              <td class="tg-8d8j">https://trt4-jus-br.zoom.us/my/varabage01js</td>
+            </tr>
+            <tr>
+              <td class="tg-1rnr"><span style="font-weight:700;text-decoration:none;color:black;background-color:#00B0F0">23/11/2022</span></td>
+              <td class="tg-bobw">17:00:00</td>
+              <td class="tg-8d8j">CONCILIAÇÃO</td>
+              <td class="tg-bobw">REITER</td>
+              <td class="tg-8d8j">CANOAS</td>
+              <td class="tg-bobw">1ª VT</td>
+              <td class="tg-8d8j">CIDINEI LOURENCO DE&nbsp;&nbsp;&nbsp;LIMA</td>
+              <td class="tg-8d8j">BRUNO</td>
+              <td class="tg-8d8j">ONLINE</td>
+              <td class="tg-7zrl">22 a 25 mil</td>
+              <td class="tg-8d8j">FROTA SECA</td>
+              <td class="tg-8d8j"> </td>
+              <td class="tg-8d8j">0020177-64.2019.5.04.0201</td>
+              <td class="tg-8d8j">HERMANN</td>
+              <td class="tg-8d8j">https://trt4-jus-br.zoom.us/my/cejusc.2grau.sala04</td>
+            </tr>
+            <tr>
+              <td class="tg-1rnr"><span style="font-weight:700;text-decoration:none;color:black;background-color:#00B0F0">24/11/2022</span></td>
+              <td class="tg-bobw">09:00:00</td>
+              <td class="tg-8d8j">CONCILIAÇÃO</td>
+              <td class="tg-bobw">REITER</td>
+              <td class="tg-8d8j">FRANCISO BELTRÃO</td>
+              <td class="tg-bobw">2ªVC</td>
+              <td class="tg-8d8j">Empresa NE&nbsp;&nbsp;&nbsp;Transportes Rodoviário de Cargas Eireli</td>
+              <td class="tg-8d8j">BRUNO</td>
+              <td class="tg-8d8j">ONLINE</td>
+              <td class="tg-7zrl">-</td>
+              <td class="tg-8d8j">ACIDENTE</td>
+              <td class="tg-8d8j">ACIDENTE</td>
+              <td class="tg-8d8j">0005858-67.2022.8.16.0083</td>
+              <td class="tg-8d8j">WENTZ</td>
+              <td class="tg-8d8j">(vazio)</td>
+            </tr>
+            <tr>
+              <td class="tg-h84a"><span style="font-weight:700;text-decoration:none;color:black;background-color:#7030A0">24/11/2022</span></td>
+              <td class="tg-bobw">13:30:00</td>
+              <td class="tg-8d8j">PERÍCIA</td>
+              <td class="tg-bobw">PARRILLA</td>
+              <td class="tg-8d8j">PORTO ALEGRE</td>
+              <td class="tg-bobw">24ª</td>
+              <td class="tg-8d8j">VALQUIRIA DE SOUZA</td>
+              <td class="tg-8d8j">FELIPE</td>
+              <td class="tg-8d8j">ONLINE</td>
+              <td class="tg-7zrl">-</td>
+              <td class="tg-8d8j">COZINHEIRA</td>
+              <td class="tg-8d8j">COZINHA</td>
+              <td class="tg-8d8j">0020596-28.2022.5.04.0024</td>
+              <td class="tg-8d8j">HERMANN</td>
+              <td class="tg-8d8j">meet.google.com/yfz-nwhq-pax</td>
+            </tr>
+            <tr>
+              <td class="tg-h84a"><span style="font-weight:700;text-decoration:none;color:black;background-color:#7030A0">24/11/2022</span></td>
+              <td class="tg-bobw">15:30:00</td>
+              <td class="tg-8d8j">PERÍCIA</td>
+              <td class="tg-bobw">PARRILLA</td>
+              <td class="tg-8d8j">PORTO ALEGRE</td>
+              <td class="tg-bobw">24ª</td>
+              <td class="tg-8d8j">MATHEUS VIANA COELHO&nbsp;&nbsp;&nbsp;RAMOS</td>
+              <td class="tg-8d8j">FELIPE</td>
+              <td class="tg-getq">PRESENCIAL</td>
+              <td class="tg-7zrl">-</td>
+              <td class="tg-8d8j">ATENDENTE</td>
+              <td class="tg-8d8j">COPA</td>
+              <td class="tg-8d8j">0020617-04.2022.5.04.0024</td>
+              <td class="tg-8d8j">HERMANN</td>
+              <td class="tg-8d8j">PRESENCIAL</td>
+            </tr>
+            <tr>
+              <td class="tg-2ogz"><span style="font-weight:700;text-decoration:none;color:black;background-color:red">29/11/2022</span></td>
+              <td class="tg-n1r7">10:00:00</td>
+              <td class="tg-4bam">INSTRUÇÃO</td>
+              <td class="tg-n1r7">REITER</td>
+              <td class="tg-4bam">CANOAS</td>
+              <td class="tg-n1r7">3ª VT</td>
+              <td class="tg-4bam">NELSON ROBERTO MENDES&nbsp;&nbsp;&nbsp;TEIXEIRA</td>
+              <td class="tg-4bam">BRUNO</td>
+              <td class="tg-4bam">ONLINE</td>
+              <td class="tg-kcps"> </td>
+              <td class="tg-n1r7">MOTORISTA RODOTREM</td>
+              <td class="tg-kcps">FROTA SECA</td>
+              <td class="tg-n1r7">0020148-71.2020.5.04.0203</td>
+              <td class="tg-4bam">WENTZ</td>
+              <td class="tg-4bam">https://trt4-jus-&nbsp;&nbsp;&nbsp;br.zoom.us/my/varacanoas03js </td>
+            </tr>
+            <tr>
+              <td class="tg-2ogz"><span style="font-weight:700;text-decoration:none;color:black;background-color:red">30/11/2022</span></td>
+              <td class="tg-n1r7">09:00:00</td>
+              <td class="tg-4bam">INSTRUÇÃO</td>
+              <td class="tg-n1r7">REITER</td>
+              <td class="tg-4bam">CANOAS</td>
+              <td class="tg-n1r7">4ª VT</td>
+              <td class="tg-4bam">SILVIO ALEXANDRE DA&nbsp;&nbsp;&nbsp;SILVA FREITAS(PDV)</td>
+              <td class="tg-4bam">EDUARDA</td>
+              <td class="tg-4bam">ONLINE</td>
+              <td class="tg-kcps"> </td>
+              <td class="tg-n1r7">MOTORISTA RODOTREM</td>
+              <td class="tg-kcps">FROTA SECA</td>
+              <td class="tg-n1r7">0020348-75.2020.5.04.0204</td>
+              <td class="tg-4bam">WENTZ</td>
+              <td class="tg-4bam">HTTPS://TRT4-JUS-BR.ZOOM.US/MY/VARACANOAS04JT</td>
+            </tr>
+            <tr>
+              <td class="tg-1rnr"><span style="font-weight:700;text-decoration:none;color:black;background-color:#00B0F0">30/11/2022</span></td>
+              <td class="tg-n1r7">14:30:00</td>
+              <td class="tg-4bam">CONCILIAÇÃO</td>
+              <td class="tg-n1r7">VP</td>
+              <td class="tg-4bam">ESTEIO</td>
+              <td class="tg-n1r7">2ªVT</td>
+              <td class="tg-4bam">EDUARDO JESUS&nbsp;&nbsp;&nbsp;CAMARGO  TEIXEIRA</td>
+              <td class="tg-4bam">VINICIUS</td>
+              <td class="tg-4bam">PRESENCIAL</td>
+              <td class="tg-kcps"> </td>
+              <td class="tg-n1r7">GERENTE OPERACOES</td>
+              <td class="tg-kcps">MATRIZ</td>
+              <td class="tg-n1r7">0020460-70.2021.5.04.0281</td>
+              <td class="tg-4bam">WENTZ</td>
+              <td class="tg-4bam">PRESENCIAL</td>
+            </tr>
+            <tr>
+              <td class="tg-2ogz"><span style="font-weight:700;text-decoration:none;color:black;background-color:red">30/11/2022</span></td>
+              <td class="tg-n1r7">15:00:00</td>
+              <td class="tg-4bam">INSTRUÇÃO</td>
+              <td class="tg-n1r7">REITER</td>
+              <td class="tg-4bam">ARANGUA</td>
+              <td class="tg-n1r7">2ªVC</td>
+              <td class="tg-4bam">CLAIR FLOREST ( acid.&nbsp;&nbsp;&nbsp;Transito)</td>
+              <td class="tg-4bam">TESTE. ?</td>
+              <td class="tg-4bam">?</td>
+              <td class="tg-kcps"> </td>
+              <td class="tg-n1r7">TERCEIRO</td>
+              <td class="tg-kcps">(vazio)</td>
+              <td class="tg-n1r7">038/1.12.0003688-5</td>
+              <td class="tg-4bam">WENTZ</td>
+              <td class="tg-4bam">APENAS T. RTE</td>
+            </tr>
+            <tr>
+              <td class="tg-1rnr"><span style="font-weight:700;text-decoration:none;color:black;background-color:#00B0F0">28/11/20222</span></td>
+              <td class="tg-n1r7">08:35:00</td>
+              <td class="tg-4bam">CONCILIAÇÃO</td>
+              <td class="tg-n1r7">REITER</td>
+              <td class="tg-4bam">POUSO ALEGRE</td>
+              <td class="tg-n1r7">1ª VT</td>
+              <td class="tg-4bam">EDUARDO DE CARVALHO&nbsp;&nbsp;&nbsp;MELO</td>
+              <td class="tg-4bam">EDUARDA</td>
+              <td class="tg-4bam">ONLINE</td>
+              <td class="tg-kcps"> </td>
+              <td class="tg-n1r7">FAN</td>
+              <td class="tg-kcps">TERCEIRO</td>
+              <td class="tg-n1r7">0010620-02.2021.5.03.0075</td>
+              <td class="tg-4bam">WENTZ</td>
+              <td class="tg-4bam">https://trt3-jus-br.zoom.us/my/vt1pousoalegre</td>
+            </tr>
+          </tbody>
+          </table>
 </section>
 <script src="script.js"></script>
 </body>
