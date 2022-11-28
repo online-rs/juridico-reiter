@@ -87,3 +87,28 @@ function convidarTestemunha(){
 
 }
 
+
+// Get the input field
+var input = document.getElementById("numero");
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("botaowhatsapp1").click();
+  }
+});
+
+const numeroddd = document.getElementById('ddd');
+const dddvalor = numeroddd.value;
+
+// Execute a function when the user presses a key on the keyboard
+numeroddd.addEventListener("keypress", function(event) {
+  console.log(dddvalor);
+  if (dddvalor === 2){
+    console.log('vamos mudar para o de baixo')
+  }
+});
