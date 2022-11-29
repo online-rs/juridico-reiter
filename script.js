@@ -82,6 +82,7 @@ function convidarTestemunha(){
       alert('Favor colocar um número')
   }else{
       var caminho = 'https://wa.me/55' + numeroddd + numeroWhatsapp +'?text=Oi ' + nome + ', tudo bem?%0A%0ATeremos uma audiência de instrução do ex-funcionário '+ reclamante + '(' + processo + ')%0A%0AData: ' + data +'%0AHorário: ' + horario + '%0AModalidade: ' + modalidade + '%0ALocal: ' + local + '%0ALink: ' + link + '%0A%0A Poderia participar como testemunha, por favor? %0A%0AAbaixo está o link para instalação do aplicativo ZOOM. Favor aceitar todas as permissões, principalemnte áudio e video, para que não haja problemas na conexão. %0A%0ALink de instalação do ZOOM: https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=pt_BR&gl=US  ' 
+      console.log(caminho);
       window.open(caminho);
   }
 
