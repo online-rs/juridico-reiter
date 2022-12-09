@@ -1,6 +1,6 @@
 *{
   padding: 0;
-  margin: 5px;
+  margin: 0;
 }
 
 .convite{
@@ -15,9 +15,9 @@
 
 .caixa {
   display: flex;
-  flex-direction: column;
-  width: 400px;
+  flex-wrap: wrap;
   background-color: white;
+  max-width: 1030px;
   
 }
 
@@ -131,4 +131,30 @@ p{
 }
 .meunome{
   color: black !important;
+}
+
+.nav{
+  display: flex;
+  background-color: black;
+  min-height: 70px;
+  min-width: 742px;
+  
+}
+
+.container{
+  padding: 20px;
+}
+
+.navdiv{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+section{
+  margin: 10px;
+}
+
+.titulo{
+  color: white;
 }

@@ -10,26 +10,35 @@
 </head>
 <body>
 <header>
-<nav  class="container">
-  <button 
-        class="myButton btn-lg" id="email"  onclick="logar()"> Email
-  </button> 
-  <button 
-        class="myButton btn-lg" id="trello"  onclick="trello()"> Trello
-  </button> 
-  <button 
-        class="myButton btn-lg" id="orient"  onclick="orient()"> Orientação
-  </button> 
-<button 
-    class="myButton btn-lg" id="latromi"  onclick="latromi()"> Latromi
-</button> 
-<button 
-    class="myButton btn-lg" id="chamado"  onclick="abrirChamado()"> Chamado
-</button> 
-<button 
-    class="myButton btn-lg" id="abrirConvite"  onclick="abrirConvite()"> Convite
-</button> 
-
+<nav  class="nav">
+  <div class="logo container">
+    <div>
+      <img src="https://www.reiterlog.com/portaln/wp-content/uploads/2020/10/logistica-logo-branco.png" alt="">
+    </div>
+    <div class="text-center">
+      <h1 class="titulo">Jurídico ReiterLog</h1>
+    </div>
+  </div>
+  <div class="container navdiv">
+    <button 
+          class="myButton btn-lg" id="email"  onclick="logar()"> Email
+    </button> 
+    <button 
+          class="myButton btn-lg" id="trello"  onclick="trello()"> Trello
+    </button> 
+    <button 
+          class="myButton btn-lg" id="orient"  onclick="orient()"> Orientação
+    </button> 
+    <button 
+        class="myButton btn-lg" id="latromi"  onclick="latromi()"> Latromi
+    </button> 
+    <button 
+      class="myButton btn-lg" id="chamado"  onclick="abrirChamado()"> Chamado
+    </button> 
+    <button 
+        class="myButton btn-lg" id="abrirConvite"  onclick="abrirConvite()"> Convite
+    </button> 
+  </div>
  </nav>
 </header>
 <section class="container">
@@ -60,6 +69,7 @@
         <input type="text" placeholder="Link" id="link">
         <input type="text" placeholder="ddd" id="dddConvite">
         <input type="text" placeholder="whatsapp" id="numeroConvite">
+        <br>
         <button class="myButton1" onclick="convidarTestemunha()">Conversar</button>
         <p id="site" class="site">Link</p>
     </div>
