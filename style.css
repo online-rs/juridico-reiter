@@ -136,19 +136,23 @@ p{
 .nav{
   display: flex;
   background-color: black;
-  min-height: 70px;
-  min-width: 742px;
-  
+    
 }
 
 .container{
-  padding: 20px;
+  padding: 10px;
 }
 
 .navdiv{
   display: flex;
   flex-wrap: wrap;
+  padding: 20px;
+  align-items: center;
 
+}
+
+.logo{
+  padding: 20px;
 }
 
 section{
@@ -157,4 +161,8 @@ section{
 
 .titulo{
   color: white;
+}
+
+.navdiv button{
+  max-height:  50px;
 }
