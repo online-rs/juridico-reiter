@@ -5,7 +5,7 @@ var criarBotao = document.createElement("BUTTON");
 linha.forEach
 
 function logar(){
-  openSite('https://mail22.reiterlog.com');}
+  window.open('https://mail22.reiterlog.com');}
 
 function trello(){
   window.open('https://trello.com/b/gLX9OLv5/reiter');}  
@@ -119,3 +119,4 @@ numeroddd.addEventListener("keyup", function(event) {
     console.log('nao deu')
   }
 });
+

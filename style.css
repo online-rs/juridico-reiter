@@ -166,3 +166,62 @@ section{
 .navdiv button{
   max-height:  50px;
 }
+
+main{
+  padding: 10px;
+}
+
+
+.titulo__todo{
+  margin: 30px;
+}
+
+/* CSS */
+#todo-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+}
+
+#todo-list li {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+  min-width: 150px;
+  padding: 5px;
+}
+
+label{
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  padding: 5px;
+  margin: 5px;
+  border: solid 1px black;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#new-task {
+  width: 300px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#add-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
