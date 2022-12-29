@@ -169,59 +169,42 @@ section{
 
 main{
   padding: 10px;
-}
-
-
-.titulo__todo{
-  margin: 30px;
-}
-
-/* CSS */
-#todo-list ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px;
-}
-
-#todo-list li {
-  display: flex;
-  align-items: center;
   align-content: center;
-  margin: 10px;
-  min-width: 150px;
-  padding: 5px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-label{
+#idContainer{
+  width: 600px;
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
-  padding: 5px;
+}
+
+.menus  {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin: 5px;
-  border: solid 1px black;
 }
 
-.delete-button {
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
+#txtMsg{
+  width: 600px;
 }
 
-#new-task {
-  width: 300px;
+
+input{
   padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+}
+label {
+  padding: 5px;
 }
 
-#add-button {
-  background-color: green;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
+#txtOutput{
+  width: 600px;
+}
+
+textarea{
+  padding: 5px;
 }
