@@ -25,6 +25,12 @@ function abrirChamado(){
   window.open(chamadoLink);
 }
 
+function abrirAI(){
+  console.log('Abrindo AI')
+  window.open('https://online-rs.github.io/juridico-reiter/advogadovirtual');
+}
+
+
 
 function getV(alvoid){
   return document.getElementById(alvoid).value;
