@@ -11,7 +11,7 @@ function trello(){
   window.open('https://trello.com/b/gLX9OLv5/reiter');}  
 
 function orient(){
-  window.open('https://drive.google.com/drive/folders/1OPy0lCBtVtdZDe5OkUJwiGp0HbNfc8hv');}  
+  window.open('https://drive.google.com/drive/folders/1TALSopbH99ov2hUgiMrl8Yn1mjABC5Wd?usp=share_link');}  
 
 function latromi(){
   console.log('Abrindo Latromi')
