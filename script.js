@@ -126,3 +126,20 @@ numeroddd.addEventListener("keyup", function(event) {
   }
 });
 
+// Obtém uma referência para a tabela
+const table = document.querySelector('table');
+
+// Obtém todas as linhas da tabela (tr)
+const rows = table.querySelectorAll('tr');
+
+// Para cada linha (exceto o cabeçalho), adiciona uma nova célula (td) com um botão dentro
+for (let i = 1; i < rows.length; i++) {
+  const row = rows[i];
+  const buttonCell = document.createElement('td');
+  const button = document.createElement('button');
+  button.textContent = 'C';
+  buttonCell.appendChild(button);
+  row.appendChild(buttonCell);
+}
+
+table.setAttribute("id", "pauta");
