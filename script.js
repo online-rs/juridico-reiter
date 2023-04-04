@@ -95,6 +95,9 @@ function convidarTestemunha(){
 }
 
 
+
+
+
 // Get the input field
 var input = document.getElementById("numero");
 
@@ -132,14 +135,51 @@ const table = document.querySelector('table');
 // Obtém todas as linhas da tabela (tr)
 const rows = table.querySelectorAll('tr');
 
-// Para cada linha (exceto o cabeçalho), adiciona uma nova célula (td) com um botão dentro
-for (let i = 1; i < rows.length; i++) {
-  const row = rows[i];
-  const buttonCell = document.createElement('td');
-  const button = document.createElement('button');
-  button.textContent = 'C';
-  buttonCell.appendChild(button);
-  row.appendChild(buttonCell);
-}
+for (var i = 1; i < rows.length; i++) {
+  var cell = rows[i].insertCell(0);
+  var button = document.createElement("button");
+  button.setAttribute("id", "convidar");
+  button.setAttribute("class", "botao");
+  button.innerHTML = "C";
+  cell.appendChild(button);
+  }
 
-table.setAttribute("id", "pauta");
+var button2 = document.querySelectorAll('.tabela-botoes .botao');
+console.log(button2);
+
+button2.forEach(function(botao) {
+  botao.addEventListener('click', function() {
+  // Selecione a linha correspondente ao botão clicado
+  var row = botao.parentNode.parentNode;
+
+  // Obtenha os valores das colunas
+  var cdata = row.querySelectorAll('td')[1].textContent;
+  var chora = row.querySelectorAll('td')[2].textContent;
+  var cComarca = row.querySelectorAll('td')[5].textContent;
+  var cReclamante = row.querySelectorAll('td')[7].textContent;
+  var cMODALIDADE = row.querySelectorAll('td')[9].textContent;
+  var cProc = row.querySelectorAll('td')[12].textContent;
+  var cLINK = row.querySelectorAll('td')[14].textContent;
+
+  // Selecione os campos do formulário
+  var reclamante = document.getElementById('reclamante');
+  var processo = document.getElementById('processo');
+  var data = document.getElementById('data');
+  var horario = document.getElementById('horario');
+  var modalidade = document.getElementById('modalidade');
+  var local = document.getElementById('local');
+  var link = document.getElementById('link');
+
+  // Preencha os campos do formulário com os valores obtidos
+  data.setAttribute('value', cdata);
+  horario.setAttribute('value', chora);
+  local.setAttribute('value', cComarca);
+  modalidade.setAttribute('value', cMODALIDADE);
+  link.setAttribute('value', cLINK);
+  reclamante.setAttribute('value', cReclamante);
+  processo.setAttribute('value', cProc);
+  });
+  });  
+
+
+  
