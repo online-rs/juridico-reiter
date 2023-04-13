@@ -44,7 +44,7 @@
   <label class="control-label" for="textinput">CEP</label>  
   <div class="col-md">
   <input id="cep" name="cep" type="number" placeholder="CEP (apenas números)" class="form-control input-md" required="">
-    <button>Buscar</button>
+    <button onclick="pesquisacep()">Buscar</button>
   </div>
 </div>
 
@@ -52,12 +52,12 @@
 <div class="form-group">
   <label class="control-label" for="textinput">Endereço Completo</label>  
   <div class="col-md">
-  <input id="textinput" name="textinput" type="text" placeholder="Rua / Avenida / Estrada / Rodovia" class="form-control input-md" required=""> 
-  <input id="enderecon" name="enderecon" type="number" placeholder="Número" class="form-control input-md" required="">
-  <input id="enderecocomplemento" name="enderecocomplemento" type="text" placeholder="Complemento(se houver)" class="form-control input-md">
-  <input id="enderecobairro" name="enderecobairro" type="text" placeholder="Bairro" class="form-control input-md" required="">
-  <input id="enderecocidade" name="enderecocidade" type="text" placeholder="Cidade" class="form-control input-md" required="">
-  <select id="enderecoestado" name="enderecoestado" value="RS" class="form-control col-md">
+  <input id="rua" name="textinput" type="text" placeholder="Rua / Avenida / Estrada / Rodovia" class="form-control input-md" required=""> 
+  <input id="numero" name="enderecon" type="number" placeholder="Número" class="form-control input-md" required="">
+  <input id="complemento" name="enderecocomplemento" type="text" placeholder="Complemento(se houver)" class="form-control input-md">
+  <input id="bairro" name="enderecobairro" type="text" placeholder="Bairro" class="form-control input-md" required="">
+  <input id="cidade" name="enderecocidade" type="text" placeholder="Cidade" class="form-control input-md" required="">
+  <select id="estado" name="enderecoestado" value="RS" class="form-control col-md">
       <option value="AC">AC</option>
       <option value="AL">AL</option>
       <option value="AP">AP</option>
@@ -245,32 +245,16 @@
   </div>
 </div>
 
-<!-- Multiple Checkboxes (inline) -->
 <div class="form-group">
-  <label class="col-md control-label" for="depedentes">Quantidade de Dependentes</label>
-  <div class="col-md">
-    <label class="checkbox-inline" for="depedentes-0">
-      <input type="checkbox" name="depedentes" id="depedentes-0" value="0">
-      0
-    </label>
-    <label class="checkbox-inline" for="depedentes-1">
-      <input type="checkbox" name="depedentes" id="depedentes-1" value="1">
-      1
-    </label>
-    <label class="checkbox-inline" for="depedentes-2">
-      <input type="checkbox" name="depedentes" id="depedentes-2" value="2">
-      2
-    </label>
-    <label class="checkbox-inline" for="depedentes-3">
-      <input type="checkbox" name="depedentes" id="depedentes-3" value="3">
-      3
-    </label>
-    <label class="checkbox-inline" for="depedentes-4">
-      <input type="checkbox" name="depedentes" id="depedentes-4" value="4">
-      4
-    </label>
+    <label for="exampleFormControlSelect1">Quantidade de Dependentes</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      </select>
   </div>
-</div>
 
 <!-- File Button --> 
 <div class="form-group">
