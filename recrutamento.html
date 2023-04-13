@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurídico</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+<nav  class="nav">
+  <div class="logo">
+    <div>
+      <a href="index.html">
+      <img src="https://www.reiterlog.com/portaln/wp-content/uploads/2020/10/logistica-logo-branco.png" alt=""></a>
+    </div>
+    <div>
+      <h1 class="titulo">Recrutamento - ReiterLog</h1>
+    </div>
+  </div>
+  <div class="navdiv">
+  </div>
+ </nav>
+</header>
+<main>
+<section>
+  <div>
+  <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Cadastro</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="control-label" for="textinput">Nome Completo</label>  
+  <div class="col-md">
+  <input id="nomecompleto" name="nomecompleto" type="text" placeholder="Nome Completo (Sem abreviações)" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="control-label" for="textinput">CEP</label>  
+  <div class="col-md">
+  <input id="cep" name="cep" type="number" placeholder="CEP (apenas números)" class="form-control input-md" required="">
+    <button>Buscar</button>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="control-label" for="textinput">Endereço Completo</label>  
+  <div class="col-md">
+  <input id="textinput" name="textinput" type="text" placeholder="Rua / Avenida / Estrada / Rodovia" class="form-control input-md" required=""> 
+  <input id="enderecon" name="enderecon" type="number" placeholder="Número" class="form-control input-md" required="">
+  <input id="enderecocomplemento" name="enderecocomplemento" type="text" placeholder="Complemento(se houver)" class="form-control input-md">
+  <input id="enderecobairro" name="enderecobairro" type="text" placeholder="Bairro" class="form-control input-md" required="">
+  <input id="enderecocidade" name="enderecocidade" type="text" placeholder="Cidade" class="form-control input-md" required="">
+  <select id="enderecoestado" name="enderecoestado" value="RS" class="form-control">
+      <option value="AC">AC</option>
+      <option value="AL">AL</option>
+      <option value="AP">AP</option>
+      <option value="AM">AM</option>
+      <option value="BA">BA</option>
+      <option value="CE">CE</option>
+      <option value="DF">DF</option>
+      <option value="ES">ES</option>
+      <option value="GO">GO</option>
+      <option value="MA">MA</option>
+      <option value="MT">MT</option>
+      <option value="MS">MS</option>
+      <option value="MG">MG</option>
+      <option value="PA">PA</option>
+      <option value="PB">PB</option>
+      <option value="PR">PR</option>
+      <option value="PE">PE</option>
+      <option value="PI">PI</option>
+      <option value="RJ">RJ</option>
+      <option value="RN">RN</option>
+      <option selected="selected" value="RS">RS</option>
+      <option value="RO">RO</option>
+      <option value="RR">RR</option>
+      <option value="SC">SC</option>
+      <option value="SP">SP</option>
+      <option value="SE">SE</option>
+      <option value="TO">TO</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="control-label" for="escolaridade">Escolaridade</label>
+  <div class="col-md">
+    <select id="escolaridade" name="escolaridade" class="form-control">
+      <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+      <option value="Ensino Fundamental Completo">Ensino Fundamental Completo</option>
+      <option value="Ensino Médio Incompleto">Ensino Médio Incompleto</option>
+      <option value="Ensino Médio Completo">Ensino Médio Completo</option>
+      <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+      <option value="Ensino Superior Completo">Ensino Superior Completo</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md control-label" for="rg">RG</label>  
+  <div class="col-md">
+  <input id="rg" name="rg" type="number" placeholder="RG (apenas números)" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md control-label" for="cpf">CPF</label>  
+  <div class="col-md">
+  <input id="cpf" name="cpf" type="number" placeholder="CPF (apenas números)" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md control-label" for="textinput">Título de Eleitor</label>  
+  <div class="col-md">
+  <input id="titulonumero" name="titulonumero" type="numero" placeholder="Número" class="form-control input-md" required="">
+  <input id="titulozona" name="titulozona" type="numero" placeholder="Zona" class="form-control input-md" required="">
+  <input id="tituloserie" name="tituloserie" type="numero" placeholder="Serie" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md control-label" for="pis">PIS</label>  
+  <div class="col-md">
+  <input id="pis" name="pis" type="number" placeholder="PIS (apenas números)" class="form-control input-md" required="">
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md control-label" for="reservista">Certificado de Reservista</label>  
+  <div class="col-md">
+  <input id="reservista" name="reservista" type="text" placeholder="número" class="form-control input-md">
+  <span class="help-block">Se aplicável</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md control-label" for="nomemae">Nome da Mãe Completo</label>  
+  <div class="col-md">
+  <input id="nomemae" name="nomemae" type="text" placeholder="Nome Mãe" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md control-label" for="nomepai">Nome do Pai Completo</label>  
+  <div class="col-md">
+  <input id="nomepai" name="nomepai" type="text" placeholder="Nome do Pai Completo" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md control-label" for="estadocivil">Estado Civil</label>
+  <div class="col-md">
+    <select id="estadocivil" name="estadocivil" class="form-control">
+      <option value="Solteiro">Solteiro</option>
+      <option value="Casado">Casado</option>
+      <option value="União Estável">União Estável</option>
+      <option value="Divorciado">Divorciado</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md control-label" for="ctpsnumero">Carteira de Trabalho (Número)</label>  
+  <div class="col-md">
+  <input id="ctpsnumero" name="ctpsnumero" type="number" placeholder="CTPS (Número)" class="form-control input-md" required="">
+  <input id="ctpsserie" name="ctpsserie" type="number" placeholder="CTPS (Série)" class="form-control input-md" required="">
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md control-label" for="email">Email</label>  
+  <div class="col-md">
+  <input id="email" name="email" type="email" placeholder="Email" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md control-label" for="datanascimento">Data de Nascimento</label>  
+  <div class="col-md">
+  <input id="datanascimento" name="datanascimento" type="date" placeholder="Data de Nascimento" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md control-label" for="nacionalidade">Nacionalidade</label>  
+  <div class="col-md">
+  <input id="nacionalidade" name="nacionalidade" type="text" placeholder="Nacionalidade" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md control-label" for="bancoconta">Dados Bancários</label>  
+  <div class="col-md">
+  <input id="bancoconta" name="bancoconta" type="text" placeholder="Nome Banco" class="form-control input-md" required="">
+  <input id="bancoconta" name="bancoconta" type="text" placeholder="Conta" class="form-control input-md" required="">
+  <input id="bancoagencia" name="bancoagencia" type="text" placeholder="Agência" class="form-control input-md" required="">
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md control-label" for="contatopessoal">Contato Pessoal</label>  
+  <div class="col-md">
+  <input id="contatopessoal" name="contatopessoal" type="number" placeholder="Contato Pessoal" class="form-control input-md" required="">
+    <span>DDD + Número Ex: 51999999999</span>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md control-label" for="contatorecados">Contato (Recados)</label>  
+  <div class="col-md">
+  <input id="contatorecados" name="contatorecados" type="text" placeholder="Contato (Recados)" class="form-control input-md" required="">
+  <span>DDD + Número Ex: 51999999999</span>  
+  </div>
+</div>
+
+<!-- Multiple Checkboxes (inline) -->
+<div class="form-group">
+  <label class="col-md control-label" for="depedentes">Quantidade de Dependentes</label>
+  <div class="col-md">
+    <label class="checkbox-inline" for="depedentes-0">
+      <input type="checkbox" name="depedentes" id="depedentes-0" value="0">
+      0
+    </label>
+    <label class="checkbox-inline" for="depedentes-1">
+      <input type="checkbox" name="depedentes" id="depedentes-1" value="1">
+      1
+    </label>
+    <label class="checkbox-inline" for="depedentes-2">
+      <input type="checkbox" name="depedentes" id="depedentes-2" value="2">
+      2
+    </label>
+    <label class="checkbox-inline" for="depedentes-3">
+      <input type="checkbox" name="depedentes" id="depedentes-3" value="3">
+      3
+    </label>
+    <label class="checkbox-inline" for="depedentes-4">
+      <input type="checkbox" name="depedentes" id="depedentes-4" value="4">
+      4
+    </label>
+  </div>
+</div>
+
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md control-label" for="anexos">Anexos</label>
+  <div class="col-md">
+    <input id="anexos" name="anexos" class="input-file" type="file">
+  </div>
+</div>
+</fieldset>
+
+
+</form>
+
+  </div>
+</section>
+
+
+    <script src="script.js"></script>
+    <script src="todo.js"></script>
+
+</body>
+</html>
