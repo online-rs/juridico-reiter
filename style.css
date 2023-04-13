@@ -199,9 +199,20 @@ main{
   width: 600px;
 }
 
+.form-group{
+  margin: 20px !important;
+
+
+}
+
+.help{
+  font-size: small;
+}
 
 input{
   padding: 5px;
+  margin: 5px !important;
+  
 }
 label {
   padding: 5px;
@@ -225,4 +236,16 @@ iframe{
   background-color: rgb(88, 88, 230);
   height: 35px;
   width: 35px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

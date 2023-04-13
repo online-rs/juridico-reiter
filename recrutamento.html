@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,10 +31,6 @@
   <form class="form-horizontal">
 <fieldset>
 
-<!-- Form Name -->
-<legend>Cadastro</legend>
-
-<!-- Text input-->
 <div class="form-group">
   <label class="control-label" for="textinput">Nome Completo</label>  
   <div class="col-md">
@@ -61,7 +57,7 @@
   <input id="enderecocomplemento" name="enderecocomplemento" type="text" placeholder="Complemento(se houver)" class="form-control input-md">
   <input id="enderecobairro" name="enderecobairro" type="text" placeholder="Bairro" class="form-control input-md" required="">
   <input id="enderecocidade" name="enderecocidade" type="text" placeholder="Cidade" class="form-control input-md" required="">
-  <select id="enderecoestado" name="enderecoestado" value="RS" class="form-control">
+  <select id="enderecoestado" name="enderecoestado" value="RS" class="form-control col-md">
       <option value="AC">AC</option>
       <option value="AL">AL</option>
       <option value="AP">AP</option>
@@ -191,6 +187,7 @@
   <div class="col-md">
   <input id="ctpsnumero" name="ctpsnumero" type="number" placeholder="CTPS (Número)" class="form-control input-md" required="">
   <input id="ctpsserie" name="ctpsserie" type="number" placeholder="CTPS (Série)" class="form-control input-md" required="">
+  </div>
 </div>
 
 <!-- Text input-->
@@ -224,9 +221,10 @@
 <div class="form-group">
   <label class="col-md control-label" for="bancoconta">Dados Bancários</label>  
   <div class="col-md">
-  <input id="bancoconta" name="bancoconta" type="text" placeholder="Nome Banco" class="form-control input-md" required="">
-  <input id="bancoconta" name="bancoconta" type="text" placeholder="Conta" class="form-control input-md" required="">
-  <input id="bancoagencia" name="bancoagencia" type="text" placeholder="Agência" class="form-control input-md" required="">
+    <input id="bancoconta" name="bancoconta" type="text" placeholder="Nome Banco" class="form-control input-md" required="">
+    <input id="bancoconta" name="bancoconta" type="text" placeholder="Conta" class="form-control input-md" required="">
+    <input id="bancoagencia" name="bancoagencia" type="text" placeholder="Agência" class="form-control input-md" required="">
+  </div>
 </div>
 
 <!-- Text input-->
@@ -234,7 +232,7 @@
   <label class="col-md control-label" for="contatopessoal">Contato Pessoal</label>  
   <div class="col-md">
   <input id="contatopessoal" name="contatopessoal" type="number" placeholder="Contato Pessoal" class="form-control input-md" required="">
-    <span>DDD + Número Ex: 51999999999</span>
+    <span class="help">DDD + Número Ex: 51999999999</span>
   </div>
 </div>
 
@@ -242,8 +240,8 @@
 <div class="form-group">
   <label class="col-md control-label" for="contatorecados">Contato (Recados)</label>  
   <div class="col-md">
-  <input id="contatorecados" name="contatorecados" type="text" placeholder="Contato (Recados)" class="form-control input-md" required="">
-  <span>DDD + Número Ex: 51999999999</span>  
+  <input id="contatorecados" name="contatorecados" type="number" placeholder="Contato (Recados)" class="form-control input-md" required="">
+  <span class="help">DDD + Número Ex: 51999999999</span>  
   </div>
 </div>
 
