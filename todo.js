@@ -111,3 +111,24 @@ function pesquisacep(valor) {
         limpa_formulário_cep();
     }
 };
+
+
+var dependente = document.getElementById('dependente');
+
+
+var teste = document.getElementById('dependenteg');
+teste.style.display = "none";
+
+dependente.addEventListener("click", function(event) {
+  console.log(dependente.value);
+  if (dependente.value == 0){
+    console.log('agora sim');
+    var teste = document.getElementById('dependenteg');
+    teste.style.display = "none";
+    }
+    else{
+      var teste = document.getElementById('dependenteg');
+      teste.style.display = "block";
+    }
+  });
+

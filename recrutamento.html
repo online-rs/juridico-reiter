@@ -246,9 +246,9 @@
 </div>
 
 <div class="form-group">
-    <label for="exampleFormControlSelect1">Quantidade de Dependentes</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>0</option>
+    <label for="dependente">Quantidade de Dependentes</label>
+    <select class="form-control" id="dependente">
+      <option selected="selected">0</option>
       <option>1</option>
       <option>2</option>
       <option>3</option>
@@ -256,14 +256,25 @@
       </select>
   </div>
 
+  <div class="form-group gdependente" id="dependenteg">
+    <label class="col-md control-label" for="bancoconta">Dependente</label>  
+    <div class="col-md">
+      <input id="ndepdente" name="dependente1" type="text" placeholder="Nome Completo Dependente" class="form-control input-md" required="">
+      <input id="cpfdependente" name="cpfdependente" type="text" placeholder="CPF dependente" class="form-control input-md" required="">
+    </div>
+  </div>
+
+
+
 <!-- File Button --> 
 <div class="form-group">
   <label class="col-md control-label" for="anexos">Anexos</label>
   <div class="col-md">
-    <input id="anexos" name="anexos" class="input-file" type="file">
+    <input id="anexos" name="anexos" class="input-file" type="file" multiple="multiple">
   </div>
 </div>
 </fieldset>
+
 
 
 </form>
