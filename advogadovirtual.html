@@ -9,7 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
-<body onload="OnLoad()">
 <header>
 <nav  class="nav">
   <div class="logo">
@@ -79,6 +78,94 @@
 
         
     </div>
+
+    <section>
+      <div class="form-group">
+        <label class="col-md control-label" for="nomecompleto">Nome Completo</label>
+        <div class="col-md">
+          <input id="nomecompleto" name="nomecompleto" type="text" placeholder="Nome Completo" class="form-control input-md" required="">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md control-label" for="whatsappctps">Whatsapp</label>
+        <div class="col-md">
+          <input id="whatsappctps" name="whatsappctps" type="number" placeholder="Nome Completo" class="form-control input-md" required="">
+            <span class="help">DDD + Número Ex: 51999999999</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md control-label" for="salario">Qual era seu salário médio mensal?</label>
+        <div class="col-md">
+          <input id="salario" name="salario" type="number" placeholder="Salário" class="form-control input-md" required="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md control-label" for="tempo">Quantos meses você trabalhou sem carteira assinada?</label>
+        <div class="col-md">
+          <input id="tempo" name="tempo" type="number" placeholder="Meses" class="form-control input-md" required="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md control-label" for="dias">Quantos dias já trabalhou esse mês ou no último mês trabalhado?</label>
+        <div class="col-md">
+          <input id="dias" name="dias" type="number" placeholder="Dias" class="form-control input-md" required="">
+        </div>
+      </div>
+
+      <div class="form-group">
+      <label class="col-md control-label" for="ferias">Quantas vezes recebeu pagamento de férias?</label>
+      <select class="col-md form-control input-md" id='ferias' name='ferias'>
+        <option selected>0</option>
+        <option value="1">1 vez</option>
+        <option value="2">2 vezes</option>
+        <option value="3">3 vezes</option>
+        <option value="4">4 vezes</option>
+      </select>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md control-label" for="13salario">Quantas vezes recebeu pagamento 13º salário?</label>
+        <select class="col-md form-control input-md" id='13salario' name='13salario'>
+          <option selected>0</option>
+          <option value="1">1 vez</option>
+          <option value="2">2 vezes</option>
+          <option value="3">3 vezes</option>
+          <option value="4">4 vezes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md control-label" for="periculosidade">Trabalhou em ambiente exposto a periculosidade?</label>
+        <select class="col-md form-control input-md" id='periculosidade' name='periculosidade'>
+          <option selected value="0">Não</option>
+          <option value="0.4">Sim</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md control-label" for="insalubridade">Trabalhou em ambiente insalubre?</label>
+        <select class="col-md form-control input-md" id='insalubridade' name='insalubridade'>
+          <option selected>Não</option>
+          <option value="264">Sim</option>
+        </select>
+      </div>
+
+      <button id="calcular" name="calcular" class="btn btn-primary">Calcular</button>
+
+
+      <h3 id='salariobase'>Salário Base: R$ <span id='valorsalariobase'>0</span></h3>
+      <h3>Saldo de Salário: R$ <span id='saldodesalario'>0</span></h3>
+      <h3>13º Salário: R$ <span id='13salarioc'>0</span></h3>
+      <h3>Férias + 1/3: R$ <span id='feriasc'>0</span></h3>
+      <h3>FGTS Contrato: R$ <span id='fgtscontrato'>0</span></h3>
+      <h3>FGTS Multa 40%: R$ <span id='fgtsmulta'>0</span></h3>
+      <h3>Aviso Prévio: R$ <span id='avisoprevio'>0</span></h3>
+       
+       <h2>Total: R$ <span id='total'>0</span></h2>
+    </section>
 </main>
 
 

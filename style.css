@@ -249,3 +249,7 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.novo{
+  width: 100vw !important;
+}
