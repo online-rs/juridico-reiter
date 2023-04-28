@@ -146,6 +146,7 @@ for (var i = 1; i < rows.length; i++) {
 
 var button2 = document.querySelectorAll('.tabela-botoes .botao');
 console.log(button2);
+console.log('vamos ver como fica o caso accima');
 
 button2.forEach(function(botao) {
   botao.addEventListener('click', function() {
