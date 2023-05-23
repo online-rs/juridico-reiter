@@ -10,8 +10,18 @@ function logar(){
 function trello(){
   window.open('https://trello.com/b/gLX9OLv5/reiter');}  
 
-function orient(){
-  window.open('https://drive.google.com/drive/folders/1TALSopbH99ov2hUgiMrl8Yn1mjABC5Wd?usp=share_link');}  
+function orient() {
+  var usuario = prompt("Digite o usuário:");
+  var senha = prompt("Digite a senha:");
+//procurando encripatdor
+  if (usuario === "reiter" && senha === "reiter@2023") {
+    window.open('https://drive.google.com/drive/folders/1TALSopbH99ov2hUgiMrl8Yn1mjABC5Wd?usp=share_link');
+  } else {
+    alert("Usuário ou senha incorretos. Acesso negado.");
+  }
+}
+
+
 
 function latromi(){
   console.log('Abrindo Latromi')
