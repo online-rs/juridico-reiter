@@ -21,8 +21,6 @@ function orient() {
   }
 }
 
-
-
 function latromi(){
   console.log('Abrindo Latromi')
   window.open('http://172.31.0.142:8081/web');
@@ -60,8 +58,6 @@ function conversar(){
   }
 
 }
-var pauta = document.getElementById('pauta');
-pauta.style.display = 'none';
 
 function hideObjects(ObjectId){
   var pauta = document.getElementById(ObjectId);
@@ -105,7 +101,150 @@ function convidarTestemunha(){
 }
 
 
+async function fetchAndRenderTableData() {
+    const spreadsheetID = '1IPS-QbUNLeSUt8Aou9fAzJ2b9-Cepglf8-Jc6ICupJQ';
+    const url = `https://docs.google.com/spreadsheets/d/${spreadsheetID}/gviz/tq?tqx=out:json`;
+  
+    const response = await fetch(url);
+    const text = await response.text();
+    const jsonData = JSON.parse(text.substr(47).slice(0, -2));
+  
+    const rows = jsonData.table.rows;
+    const headers = jsonData.table.cols.map(col => col.label);
+  
+    const structuredData = rows.map(row => {
+      const rowData = {};
+      row.c.forEach((cell, index) => {
+        const header = headers[index];
+        let value = cell && cell.v;
+  
+        // Formatar a data
+        if (header.includes('data')) {
+          value = formatDate(value);
+        }
+  
+        // Formatar o horário
+        if (header.includes('hora')) {
+          value = formatTime(value);
+        }
+  
+        rowData[header] = value;
+      });
+      return rowData;
+    });
+  
+    const table = document.createElement('table');
+    table.classList.add('table', 'table-bordered', 'tg', 'tabela-botoes');
+    table.setAttribute('id', 'pauta')
+  
+    // Cria o cabeçalho da tabela
+    const thead = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    headers.slice(0, 15).forEach(header => {
+      const th = document.createElement('th');
+      th.textContent = header;
+      headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+  
+    // Cria o corpo da tabela
+    const tbody = document.createElement('tbody');
+    structuredData.forEach(data => {
+      const row = document.createElement('tr');
+      headers.slice(0, 15).forEach(header => {
+        const cell = document.createElement('td');
+        cell.textContent = data[header] || '';
+        row.appendChild(cell);
+      });
+      tbody.appendChild(row);
+    });
+    table.appendChild(tbody);
+  
+    const tabelaAgendamento = document.getElementById('tabela-agendamento');
+    tabelaAgendamento.innerHTML = '';
+    tabelaAgendamento.appendChild(table);
 
+    const rows2 = table.querySelectorAll('tr');
+
+    for (var i = 1; i < rows2.length; i++) {
+      var cell = rows2[i].insertCell(0);
+      var button = document.createElement("button");
+      button.setAttribute("id", "convidar");
+      button.setAttribute("class", "botao");
+      button.innerHTML = "C";
+      cell.appendChild(button);
+      }
+
+      var button2 = document.querySelectorAll('.tabela-botoes .botao');
+      console.log(button2);
+      console.log('vamos ver como fica o caso accima');
+      
+      button2.forEach(function(botao) {
+        botao.addEventListener('click', function() {
+        // Selecione a linha correspondente ao botão clicado
+        var row = botao.parentNode.parentNode;
+      
+        // Obtenha os valores das colunas
+        var cdata = row.querySelectorAll('td')[1].textContent;
+        var chora = row.querySelectorAll('td')[2].textContent;
+        var cComarca = row.querySelectorAll('td')[5].textContent;
+        var cReclamante = row.querySelectorAll('td')[7].textContent;
+        var cMODALIDADE = row.querySelectorAll('td')[9].textContent;
+        var cProc = row.querySelectorAll('td')[12].textContent;
+        var cLINK = row.querySelectorAll('td')[14].textContent;
+      
+        // Selecione os campos do formulário
+        var reclamante = document.getElementById('reclamante');
+        var processo = document.getElementById('processo');
+        var data = document.getElementById('data');
+        var horario = document.getElementById('horario');
+        var modalidade = document.getElementById('modalidade');
+        var local = document.getElementById('local');
+        var link = document.getElementById('link');
+      
+        // Preencha os campos do formulário com os valores obtidos
+        data.setAttribute('value', cdata);
+        horario.setAttribute('value', chora);
+        local.setAttribute('value', cComarca);
+        modalidade.setAttribute('value', cMODALIDADE);
+        link.setAttribute('value', cLINK);
+        reclamante.setAttribute('value', cReclamante);
+        processo.setAttribute('value', cProc);
+        });
+        });  
+      
+    
+  
+  }
+  
+  console.log('esta funcionando até aquitar');
+  window.addEventListener('DOMContentLoaded', fetchAndRenderTableData);
+  setInterval(fetchAndRenderTableData, 3000);
+  
+  function formatDate(dateString) {
+    const regex = /Date\((\d+),(\d+),(\d+)\)/;
+    const matches = regex.exec(dateString);
+    if (matches) {
+      const year = Number(matches[1]);
+      const month = Number(matches[2]) + 1;
+      const day = Number(matches[3]);
+      return `${day.toString().padStart(2, '0')}/${month.toString().padStart(2, '0')}/${year.toString()}`;
+    }
+    return '';
+  }
+  
+  function formatTime(timeString) {
+    const regex = /Date\(1899,11,30,(\d+),(\d+),(\d+)\)/;
+    const matches = regex.exec(timeString);
+    if (matches) {
+      const hours = Number(matches[1]);
+      const minutes = Number(matches[2]);
+      return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+    }
+    return '';
+  }
+  
 
 
 // Get the input field
@@ -139,58 +278,3 @@ numeroddd.addEventListener("keyup", function(event) {
   }
 });
 
-// Obtém uma referência para a tabela
-const table = document.querySelector('table');
-
-// Obtém todas as linhas da tabela (tr)
-const rows = table.querySelectorAll('tr');
-
-for (var i = 1; i < rows.length; i++) {
-  var cell = rows[i].insertCell(0);
-  var button = document.createElement("button");
-  button.setAttribute("id", "convidar");
-  button.setAttribute("class", "botao");
-  button.innerHTML = "C";
-  cell.appendChild(button);
-  }
-
-var button2 = document.querySelectorAll('.tabela-botoes .botao');
-console.log(button2);
-console.log('vamos ver como fica o caso accima');
-
-button2.forEach(function(botao) {
-  botao.addEventListener('click', function() {
-  // Selecione a linha correspondente ao botão clicado
-  var row = botao.parentNode.parentNode;
-
-  // Obtenha os valores das colunas
-  var cdata = row.querySelectorAll('td')[1].textContent;
-  var chora = row.querySelectorAll('td')[2].textContent;
-  var cComarca = row.querySelectorAll('td')[5].textContent;
-  var cReclamante = row.querySelectorAll('td')[7].textContent;
-  var cMODALIDADE = row.querySelectorAll('td')[9].textContent;
-  var cProc = row.querySelectorAll('td')[12].textContent;
-  var cLINK = row.querySelectorAll('td')[14].textContent;
-
-  // Selecione os campos do formulário
-  var reclamante = document.getElementById('reclamante');
-  var processo = document.getElementById('processo');
-  var data = document.getElementById('data');
-  var horario = document.getElementById('horario');
-  var modalidade = document.getElementById('modalidade');
-  var local = document.getElementById('local');
-  var link = document.getElementById('link');
-
-  // Preencha os campos do formulário com os valores obtidos
-  data.setAttribute('value', cdata);
-  horario.setAttribute('value', chora);
-  local.setAttribute('value', cComarca);
-  modalidade.setAttribute('value', cMODALIDADE);
-  link.setAttribute('value', cLINK);
-  reclamante.setAttribute('value', cReclamante);
-  processo.setAttribute('value', cProc);
-  });
-  });  
-
-
-  
