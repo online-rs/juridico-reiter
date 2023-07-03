@@ -191,8 +191,8 @@ async function fetchAndRenderTableData() {
         var cComarca = row.querySelectorAll('td')[5].textContent;
         var cReclamante = row.querySelectorAll('td')[7].textContent;
         var cMODALIDADE = row.querySelectorAll('td')[9].textContent;
-        var cProc = row.querySelectorAll('td')[12].textContent;
-        var cLINK = row.querySelectorAll('td')[14].textContent;
+        var cProc = row.querySelectorAll('td')[13].textContent;
+        var cLINK = row.querySelectorAll('td')[15].textContent;
       
         // Selecione os campos do formulário
         var reclamante = document.getElementById('reclamante');
