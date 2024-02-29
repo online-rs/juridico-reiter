@@ -232,6 +232,7 @@ async function fetchAndRenderTableData() {
       return `${day.toString().padStart(2, '0')}/${month.toString().padStart(2, '0')}/${year.toString()}`;
     }
     return '';
+
   }
   
   function formatTime(timeString) {
@@ -262,8 +263,31 @@ input.addEventListener("keypress", function(event) {
 });
 
 const numeroddd = document.getElementById('ddd');
+const numeroddd2 = document.getElementById('dddConvite');
+const nomeconvite = document.getElementById('nome');
+
+const numeroconvite = document.getElementById('numeroConvite');
 const dddvalor = numeroddd.value;
 const qdddvalor = length.dddvalor;
+
+const nelson = document.getElementById('nelson');
+nelson.addEventListener('click', () =>{
+  numeroddd2.value = "51";
+  numeroconvite.value = '991824298';
+  nomeconvite.value = "Nelson";});
+
+
+const paulo2 = document.getElementById('paulo');
+paulo2.addEventListener('click', () =>{
+  numeroddd2.value = "51";
+  numeroconvite.value = '999652018';
+  nomeconvite.value = "Paulo";});
+
+const neivo = document.getElementById('neivo');
+neivo.addEventListener('click', () =>{
+  numeroddd2.value = "51";
+  numeroconvite.value = '996668487';
+  nomeconvite.value = "Neivo";});
 
 // Execute a function when the user presses a key on the keyboard
 numeroddd.addEventListener("keyup", function(event) {
