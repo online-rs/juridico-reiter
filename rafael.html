@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_825b0e58107785326a9cf220fd35fa72 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_825b0e58107785326a9cf220fd35fa72" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_825b0e58107785326a9cf220fd35fa72 = L.map(
+                "map_825b0e58107785326a9cf220fd35fa72",
+                {
+                    center: [-24.777645216197183, -47.62510524366196],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9a507c7229385320ecca5433926fd3d8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9a507c7229385320ecca5433926fd3d8.addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var marker_b22010fc2e98d3b0f8d3ecff307a5086 = L.marker(
+                [-23.4388277, -47.0613084],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_b72444dce88bbae7518d2535b33fbdb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9cbe2e762efd47037453a15f3b308a66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56d5cf3341b6c2d2d5e6ba66e50e6ff4 = $(`<div id="html_56d5cf3341b6c2d2d5e6ba66e50e6ff4" style="width: 100.0%; height: 100.0%;">ARACARIGUAMA - SP (4 vezes)</div>`)[0];
+                popup_9cbe2e762efd47037453a15f3b308a66.setContent(html_56d5cf3341b6c2d2d5e6ba66e50e6ff4);
+            
+        
+
+        marker_b22010fc2e98d3b0f8d3ecff307a5086.bindPopup(popup_9cbe2e762efd47037453a15f3b308a66)
+        ;
+
+        
+    
+    
+                marker_b22010fc2e98d3b0f8d3ecff307a5086.setIcon(icon_b72444dce88bbae7518d2535b33fbdb6);
+            
+    
+            var marker_bf731900f79646a721131b2e9e9af9e5 = L.marker(
+                [-21.7886713, -48.1773096],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_89146761cecf34dc72110940c99abb0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6260146ac314b883847542efbd7f235 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c756421f095de1c8769cc2c68276b79e = $(`<div id="html_c756421f095de1c8769cc2c68276b79e" style="width: 100.0%; height: 100.0%;">ARARAQUARA - SP (1 vezes)</div>`)[0];
+                popup_f6260146ac314b883847542efbd7f235.setContent(html_c756421f095de1c8769cc2c68276b79e);
+            
+        
+
+        marker_bf731900f79646a721131b2e9e9af9e5.bindPopup(popup_f6260146ac314b883847542efbd7f235)
+        ;
+
+        
+    
+    
+                marker_bf731900f79646a721131b2e9e9af9e5.setIcon(icon_89146761cecf34dc72110940c99abb0e);
+            
+    
+            var marker_c8a0d49023b14aed4ca5a46d7cfdcac3 = L.marker(
+                [-23.1177393, -46.5547861],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_ab184e10bdee48948c070c3ee0495e45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24f96999f5bb25e4d1793dd5d0c8973b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_079d14d32861b160a1b48e0b0a089aeb = $(`<div id="html_079d14d32861b160a1b48e0b0a089aeb" style="width: 100.0%; height: 100.0%;">ATIBAIA - SP (1 vezes)</div>`)[0];
+                popup_24f96999f5bb25e4d1793dd5d0c8973b.setContent(html_079d14d32861b160a1b48e0b0a089aeb);
+            
+        
+
+        marker_c8a0d49023b14aed4ca5a46d7cfdcac3.bindPopup(popup_24f96999f5bb25e4d1793dd5d0c8973b)
+        ;
+
+        
+    
+    
+                marker_c8a0d49023b14aed4ca5a46d7cfdcac3.setIcon(icon_ab184e10bdee48948c070c3ee0495e45);
+            
+    
+            var marker_adab1d9c44aac2262b7d29dd73449e07 = L.marker(
+                [-23.5112184, -46.8764612],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_9ef36401de4377e129a3d7bf90d9b8d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d118d8035286ca747d49cd76a23d61ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b5b551464341aa0abdc5e406b6a3fc1 = $(`<div id="html_5b5b551464341aa0abdc5e406b6a3fc1" style="width: 100.0%; height: 100.0%;">BARUERI - SP (4 vezes)</div>`)[0];
+                popup_d118d8035286ca747d49cd76a23d61ca.setContent(html_5b5b551464341aa0abdc5e406b6a3fc1);
+            
+        
+
+        marker_adab1d9c44aac2262b7d29dd73449e07.bindPopup(popup_d118d8035286ca747d49cd76a23d61ca)
+        ;
+
+        
+    
+    
+                marker_adab1d9c44aac2262b7d29dd73449e07.setIcon(icon_9ef36401de4377e129a3d7bf90d9b8d1);
+            
+    
+            var marker_2b97134eee449edde02590b1f3357517 = L.marker(
+                [-23.3561111, -46.8769444],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_d062b2d0131fec77ca23ab91e25d6cec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85cc886a838fc6a36bb1c03553197075 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_718ff92adffd98b36e88a012725acf4e = $(`<div id="html_718ff92adffd98b36e88a012725acf4e" style="width: 100.0%; height: 100.0%;">CAJAMAR - SP (32 vezes)</div>`)[0];
+                popup_85cc886a838fc6a36bb1c03553197075.setContent(html_718ff92adffd98b36e88a012725acf4e);
+            
+        
+
+        marker_2b97134eee449edde02590b1f3357517.bindPopup(popup_85cc886a838fc6a36bb1c03553197075)
+        ;
+
+        
+    
+    
+                marker_2b97134eee449edde02590b1f3357517.setIcon(icon_d062b2d0131fec77ca23ab91e25d6cec);
+            
+    
+            var marker_ee58f0a5be581de5e91855575cae1b59 = L.marker(
+                [-25.3046032, -49.0545355],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_c014422749add96930910e36795cd8a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4f1c0511fae9e5530056d906dd1b2f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c87cc251c4437dbf9921ea1e4edf31b3 = $(`<div id="html_c87cc251c4437dbf9921ea1e4edf31b3" style="width: 100.0%; height: 100.0%;">CAMPINA GRANDE DO SUL - PR (4 vezes)</div>`)[0];
+                popup_c4f1c0511fae9e5530056d906dd1b2f9.setContent(html_c87cc251c4437dbf9921ea1e4edf31b3);
+            
+        
+
+        marker_ee58f0a5be581de5e91855575cae1b59.bindPopup(popup_c4f1c0511fae9e5530056d906dd1b2f9)
+        ;
+
+        
+    
+    
+                marker_ee58f0a5be581de5e91855575cae1b59.setIcon(icon_c014422749add96930910e36795cd8a2);
+            
+    
+            var marker_980e0dbba0595ccc2162d5821510f6ea = L.marker(
+                [-22.9056391, -47.059564],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_5484e6849d7af3b76f5d6c020dae685a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c086e1e00e5719ebe40c3c0b15fec2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_900ce3efc684e3321f6a9b2c42e889ce = $(`<div id="html_900ce3efc684e3321f6a9b2c42e889ce" style="width: 100.0%; height: 100.0%;">CAMPINAS - SP (6 vezes)</div>`)[0];
+                popup_0c086e1e00e5719ebe40c3c0b15fec2e.setContent(html_900ce3efc684e3321f6a9b2c42e889ce);
+            
+        
+
+        marker_980e0dbba0595ccc2162d5821510f6ea.bindPopup(popup_0c086e1e00e5719ebe40c3c0b15fec2e)
+        ;
+
+        
+    
+    
+                marker_980e0dbba0595ccc2162d5821510f6ea.setIcon(icon_5484e6849d7af3b76f5d6c020dae685a);
+            
+    
+            var marker_10d45cb5ef31540ab9794077e1395eea = L.marker(
+                [-25.4295963, -49.2712724],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_fc5e0564b4dfedef66f80f8b0ec0b67b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b9e015e45a8ce36adb859cb180016b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a4f5aa7b4576e43deffc11493777a72 = $(`<div id="html_2a4f5aa7b4576e43deffc11493777a72" style="width: 100.0%; height: 100.0%;">CURITIBA - PR (5 vezes)</div>`)[0];
+                popup_0b9e015e45a8ce36adb859cb180016b9.setContent(html_2a4f5aa7b4576e43deffc11493777a72);
+            
+        
+
+        marker_10d45cb5ef31540ab9794077e1395eea.bindPopup(popup_0b9e015e45a8ce36adb859cb180016b9)
+        ;
+
+        
+    
+    
+                marker_10d45cb5ef31540ab9794077e1395eea.setIcon(icon_fc5e0564b4dfedef66f80f8b0ec0b67b);
+            
+    
+            var marker_61d6ce2215451b41505b753206f449c4 = L.marker(
+                [-22.8548355, -46.3184553],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_8ee884de8e3688568bb0b8ea512923ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c54b33054c00e563b35b7b3e0301f881 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94424baadcdb9e03240e7d675b2ae457 = $(`<div id="html_94424baadcdb9e03240e7d675b2ae457" style="width: 100.0%; height: 100.0%;">EXTREMA - MG (4 vezes)</div>`)[0];
+                popup_c54b33054c00e563b35b7b3e0301f881.setContent(html_94424baadcdb9e03240e7d675b2ae457);
+            
+        
+
+        marker_61d6ce2215451b41505b753206f449c4.bindPopup(popup_c54b33054c00e563b35b7b3e0301f881)
+        ;
+
+        
+    
+    
+                marker_61d6ce2215451b41505b753206f449c4.setIcon(icon_8ee884de8e3688568bb0b8ea512923ec);
+            
+    
+            var marker_277b2b9fe7c9e8161d1de83b0dd0f5f3 = L.marker(
+                [-23.3328038, -46.724446],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_11ded3af1f7058d87d23a5e21a10032f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef0443fd7cf7386844b248017ed29d81 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73fc385b36de35333bbef760dca46234 = $(`<div id="html_73fc385b36de35333bbef760dca46234" style="width: 100.0%; height: 100.0%;">FRANCO DA ROCHA - SP (9 vezes)</div>`)[0];
+                popup_ef0443fd7cf7386844b248017ed29d81.setContent(html_73fc385b36de35333bbef760dca46234);
+            
+        
+
+        marker_277b2b9fe7c9e8161d1de83b0dd0f5f3.bindPopup(popup_ef0443fd7cf7386844b248017ed29d81)
+        ;
+
+        
+    
+    
+                marker_277b2b9fe7c9e8161d1de83b0dd0f5f3.setIcon(icon_11ded3af1f7058d87d23a5e21a10032f);
+            
+    
+            var marker_7440f4f241c7db57e9c6c705a23e4207 = L.marker(
+                [-27.317161, -48.557608],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_b9053a6db17aaa6930b214da86519630 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74efe477c9c9f7ab57a26a3389579d24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c90087dcc262ded9f201359c81f007bf = $(`<div id="html_c90087dcc262ded9f201359c81f007bf" style="width: 100.0%; height: 100.0%;">GOVERNADOR CELSO RAMOS - SC (25 vezes)</div>`)[0];
+                popup_74efe477c9c9f7ab57a26a3389579d24.setContent(html_c90087dcc262ded9f201359c81f007bf);
+            
+        
+
+        marker_7440f4f241c7db57e9c6c705a23e4207.bindPopup(popup_74efe477c9c9f7ab57a26a3389579d24)
+        ;
+
+        
+    
+    
+                marker_7440f4f241c7db57e9c6c705a23e4207.setIcon(icon_b9053a6db17aaa6930b214da86519630);
+            
+    
+            var marker_8dff57673c04578bdeb7d7001def3a89 = L.marker(
+                [-23.4675941, -46.5277704],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_8d1bfc995e442a77692767397987db5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d76a9cbc9d10ff6ddb89325bae9d4794 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5e17a5866d4c44ac5daa9c16d1f315a = $(`<div id="html_d5e17a5866d4c44ac5daa9c16d1f315a" style="width: 100.0%; height: 100.0%;">GUARULHOS - SP (2 vezes)</div>`)[0];
+                popup_d76a9cbc9d10ff6ddb89325bae9d4794.setContent(html_d5e17a5866d4c44ac5daa9c16d1f315a);
+            
+        
+
+        marker_8dff57673c04578bdeb7d7001def3a89.bindPopup(popup_d76a9cbc9d10ff6ddb89325bae9d4794)
+        ;
+
+        
+    
+    
+                marker_8dff57673c04578bdeb7d7001def3a89.setIcon(icon_8d1bfc995e442a77692767397987db5d);
+            
+    
+            var marker_788c0d37e7f15e3c0b66225021dce12f = L.marker(
+                [-26.9046787, -48.6552979],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_663bf93d4716234c1cb4eb59aad35ede = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_102313d7e099fe444df2670f70f152a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27a16e09ce396553215fd67173553f65 = $(`<div id="html_27a16e09ce396553215fd67173553f65" style="width: 100.0%; height: 100.0%;">ITAJAI - SC (2 vezes)</div>`)[0];
+                popup_102313d7e099fe444df2670f70f152a6.setContent(html_27a16e09ce396553215fd67173553f65);
+            
+        
+
+        marker_788c0d37e7f15e3c0b66225021dce12f.bindPopup(popup_102313d7e099fe444df2670f70f152a6)
+        ;
+
+        
+    
+    
+                marker_788c0d37e7f15e3c0b66225021dce12f.setIcon(icon_663bf93d4716234c1cb4eb59aad35ede);
+            
+    
+            var marker_4919d7ff20da246a1c9f07ca8e72af74 = L.marker(
+                [-23.1531055, -47.0580347],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_eabb263ee79e47cda4446613cbe4263c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_265b1366c7a3a2485a65d05a0e1e3006 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92ce32891b55749992f1c92c54f250a2 = $(`<div id="html_92ce32891b55749992f1c92c54f250a2" style="width: 100.0%; height: 100.0%;">ITUPEVA - SP (1 vezes)</div>`)[0];
+                popup_265b1366c7a3a2485a65d05a0e1e3006.setContent(html_92ce32891b55749992f1c92c54f250a2);
+            
+        
+
+        marker_4919d7ff20da246a1c9f07ca8e72af74.bindPopup(popup_265b1366c7a3a2485a65d05a0e1e3006)
+        ;
+
+        
+    
+    
+                marker_4919d7ff20da246a1c9f07ca8e72af74.setIcon(icon_eabb263ee79e47cda4446613cbe4263c);
+            
+    
+            var marker_7ca75d9a33befa464d8e8af3f2bc3417 = L.marker(
+                [-23.1887668, -46.884506],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_0e4e6c9f42ca4872cb22c085d248853e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7e356b4ecbb1b4f4a6a5b765738b750 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa57a5f84cd68f61f4ce4d543f53c6e1 = $(`<div id="html_aa57a5f84cd68f61f4ce4d543f53c6e1" style="width: 100.0%; height: 100.0%;">JUNDIAI - SP (2 vezes)</div>`)[0];
+                popup_d7e356b4ecbb1b4f4a6a5b765738b750.setContent(html_aa57a5f84cd68f61f4ce4d543f53c6e1);
+            
+        
+
+        marker_7ca75d9a33befa464d8e8af3f2bc3417.bindPopup(popup_d7e356b4ecbb1b4f4a6a5b765738b750)
+        ;
+
+        
+    
+    
+                marker_7ca75d9a33befa464d8e8af3f2bc3417.setIcon(icon_0e4e6c9f42ca4872cb22c085d248853e);
+            
+    
+            var marker_ba325d5414ff422ad97144bd83745895 = L.marker(
+                [-19.9854089, -43.8470691],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_d8ee96a94942308b81ebe7039d76f0b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_794347cd1567ff36e7e68a3eca05c924 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9131c53119dbd1849cfeace00a22eeda = $(`<div id="html_9131c53119dbd1849cfeace00a22eeda" style="width: 100.0%; height: 100.0%;">NOVA LIMA - MG (2 vezes)</div>`)[0];
+                popup_794347cd1567ff36e7e68a3eca05c924.setContent(html_9131c53119dbd1849cfeace00a22eeda);
+            
+        
+
+        marker_ba325d5414ff422ad97144bd83745895.bindPopup(popup_794347cd1567ff36e7e68a3eca05c924)
+        ;
+
+        
+    
+    
+                marker_ba325d5414ff422ad97144bd83745895.setIcon(icon_d8ee96a94942308b81ebe7039d76f0b4);
+            
+    
+            var marker_7701bff4528ab4d98b07c3bc8e5f81c6 = L.marker(
+                [-29.6860512, -53.8069214],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_b91e922137d7eea1ff5c6add60dbb250 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea5f6f8ec1bbf91f1786b9e68a2103ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_554652fbfde0253de71e0fc30fe335c6 = $(`<div id="html_554652fbfde0253de71e0fc30fe335c6" style="width: 100.0%; height: 100.0%;">SANTA MARIA - RS (2 vezes)</div>`)[0];
+                popup_ea5f6f8ec1bbf91f1786b9e68a2103ea.setContent(html_554652fbfde0253de71e0fc30fe335c6);
+            
+        
+
+        marker_7701bff4528ab4d98b07c3bc8e5f81c6.bindPopup(popup_ea5f6f8ec1bbf91f1786b9e68a2103ea)
+        ;
+
+        
+    
+    
+                marker_7701bff4528ab4d98b07c3bc8e5f81c6.setIcon(icon_b91e922137d7eea1ff5c6add60dbb250);
+            
+    
+            var marker_021af81d9c459c87b06ebbd783813aad = L.marker(
+                [-27.6157733, -48.6276491],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_98618fe4e0b48f834319e0a8ab3810c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8fdf047efef499ed11c03662f6357b20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b83654389d30bb5e1b5a8317b998a6f6 = $(`<div id="html_b83654389d30bb5e1b5a8317b998a6f6" style="width: 100.0%; height: 100.0%;">SAO JOSE - SC (17 vezes)</div>`)[0];
+                popup_8fdf047efef499ed11c03662f6357b20.setContent(html_b83654389d30bb5e1b5a8317b998a6f6);
+            
+        
+
+        marker_021af81d9c459c87b06ebbd783813aad.bindPopup(popup_8fdf047efef499ed11c03662f6357b20)
+        ;
+
+        
+    
+    
+                marker_021af81d9c459c87b06ebbd783813aad.setIcon(icon_98618fe4e0b48f834319e0a8ab3810c1);
+            
+    
+            var marker_933e15b004ee58f5528abb8ab7755e14 = L.marker(
+                [-25.533816, -49.2072163],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_6694f0817fbbc05b88e21ee734c6598c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8bfa8f1da4ba423bfd407d55a78ab401 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_759a0826a7d85e342d46b6f1cd32654b = $(`<div id="html_759a0826a7d85e342d46b6f1cd32654b" style="width: 100.0%; height: 100.0%;">SAO JOSE DOS PINHAIS - PR (1 vezes)</div>`)[0];
+                popup_8bfa8f1da4ba423bfd407d55a78ab401.setContent(html_759a0826a7d85e342d46b6f1cd32654b);
+            
+        
+
+        marker_933e15b004ee58f5528abb8ab7755e14.bindPopup(popup_8bfa8f1da4ba423bfd407d55a78ab401)
+        ;
+
+        
+    
+    
+                marker_933e15b004ee58f5528abb8ab7755e14.setIcon(icon_6694f0817fbbc05b88e21ee734c6598c);
+            
+    
+            var marker_cfc0200e6b56c77b65a1e61a0dbf1624 = L.marker(
+                [-23.5506507, -46.6333824],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_a29b79251efafc4df2fd2dcc506b2875 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6c745332c561d2a351a33c00cbf5b35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_849221a4301a61fcb31d26f5bf220d6b = $(`<div id="html_849221a4301a61fcb31d26f5bf220d6b" style="width: 100.0%; height: 100.0%;">SAO PAULO - SP (11 vezes)</div>`)[0];
+                popup_a6c745332c561d2a351a33c00cbf5b35.setContent(html_849221a4301a61fcb31d26f5bf220d6b);
+            
+        
+
+        marker_cfc0200e6b56c77b65a1e61a0dbf1624.bindPopup(popup_a6c745332c561d2a351a33c00cbf5b35)
+        ;
+
+        
+    
+    
+                marker_cfc0200e6b56c77b65a1e61a0dbf1624.setIcon(icon_a29b79251efafc4df2fd2dcc506b2875);
+            
+    
+            var marker_4e7d1ab6cd5bc5b11c7c9272fd413516 = L.marker(
+                [-23.5003451, -47.4582864],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_0dbad1158d65f4505635d0df2cc5cd78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e12dec54984642d201b2615561c0e08f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_198318bbf66419100c60e9a4947de73f = $(`<div id="html_198318bbf66419100c60e9a4947de73f" style="width: 100.0%; height: 100.0%;">SOROCABA - SP (7 vezes)</div>`)[0];
+                popup_e12dec54984642d201b2615561c0e08f.setContent(html_198318bbf66419100c60e9a4947de73f);
+            
+        
+
+        marker_4e7d1ab6cd5bc5b11c7c9272fd413516.bindPopup(popup_e12dec54984642d201b2615561c0e08f)
+        ;
+
+        
+    
+    
+                marker_4e7d1ab6cd5bc5b11c7c9272fd413516.setIcon(icon_0dbad1158d65f4505635d0df2cc5cd78);
+            
+    
+            var circle_6921db057d3c7e2c90104af140b5d6ea = L.circle(
+                [-24.777645216197183, -47.62510524366196],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 3}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+        var popup_bfeb823d45fd4f6d1f98ee6d72690429 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88362e442714332add13c37d002f0926 = $(`<div id="html_88362e442714332add13c37d002f0926" style="width: 100.0%; height: 100.0%;">Raio da Área de Concentração: 300 km</div>`)[0];
+                popup_bfeb823d45fd4f6d1f98ee6d72690429.setContent(html_88362e442714332add13c37d002f0926);
+            
+        
+
+        circle_6921db057d3c7e2c90104af140b5d6ea.bindPopup(popup_bfeb823d45fd4f6d1f98ee6d72690429)
+        ;
+
+        
+    
+    
+            var marker_18257a2f48fbe90695e0cede8c8ccb88 = L.marker(
+                [-29.6860512, -53.8069214],
+                {
+}
+            ).addTo(map_825b0e58107785326a9cf220fd35fa72);
+        
+    
+            var icon_f0c59fb16073e8fc1a8b1cd30add091c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2763b0369c54b4f69f345732597fed13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_832d1ac836b797a7fe310f06bac95606 = $(`<div id="html_832d1ac836b797a7fe310f06bac95606" style="width: 100.0%; height: 100.0%;">Ponto Mais Distante</div>`)[0];
+                popup_2763b0369c54b4f69f345732597fed13.setContent(html_832d1ac836b797a7fe310f06bac95606);
+            
+        
+
+        marker_18257a2f48fbe90695e0cede8c8ccb88.bindPopup(popup_2763b0369c54b4f69f345732597fed13)
+        ;
+
+        
+    
+    
+                marker_18257a2f48fbe90695e0cede8c8ccb88.setIcon(icon_f0c59fb16073e8fc1a8b1cd30add091c);
+            
+</script>
+</html>
